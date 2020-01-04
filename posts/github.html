@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>github | JINGWANG</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  
+  <meta name="description" content="Github访问速度慢以及显示不完全的解决办法参考了这位博主，修改  C:\Windows\System32\drivers\etc  中的hosts文件（PS：若没有修改权限，可以鼠标右键，属性，安全，修改权限。或者将hosts文件复制到桌面，修改之后，复制到原文件夹），将下面一段话添加到hosts文件中： 123456789101112131415161718\# GitHub Start 1">
+<meta property="og:type" content="article">
+<meta property="og:title" content="GitHub">
+<meta property="og:url" content="http://jingwang.site/posts/github.html">
+<meta property="og:site_name" content="JINGWANG">
+<meta property="og:description" content="Github访问速度慢以及显示不完全的解决办法参考了这位博主，修改  C:\Windows\System32\drivers\etc  中的hosts文件（PS：若没有修改权限，可以鼠标右键，属性，安全，修改权限。或者将hosts文件复制到桌面，修改之后，复制到原文件夹），将下面一段话添加到hosts文件中： 123456789101112131415161718\# GitHub Start 1">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2017-11-18T15:40:38.000Z">
+<meta property="article:modified_time" content="2019-12-20T10:30:26.127Z">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="JINGWANG" type="application/atom+xml">
+  
+
+  
+
+  <link rel="icon" href="/css/images/mylogo.jpg">
+  <link rel="apple-touch-icon" href="/css/images/mylogo.jpg">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+  
+<link rel="stylesheet" href="/css/style.css">
+
+
+  
+<script src="/js/jquery-3.1.1.min.js"></script>
+
+  
+<script src="/js/bootstrap.js"></script>
+
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css" >
+
+  
+    
+<link rel="stylesheet" href="/css/dialog.css">
+
+  
+
+  
+
+  
+    <link rel="stylesheet" href="/css/header-post.css" >
+  
+
+  
+  
+  
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  
+  <div id="container">
+    <div id="wrap">
+      
+        <header>
+
+    <div id="allheader" class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="navbar-inner">
+          
+          <div class="container"> 
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            
+              <a class="brand" style="
+                 margin-top: 0px;"  
+                href="#" data-toggle="modal" data-target="#myModal" >
+                  <img width="124px" height="124px" alt="Hike News" src="/css/images/mylogo.jpg">
+              </a>
+            
+            
+            <div class="navbar-collapse collapse">
+              <ul class="hnav navbar-nav">
+                
+                  <li> <a class="main-nav-link" href="/">Home</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/archives">Archives</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/categories">Categories</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/tags">Tags</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/skateboarding">Skateboarding</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/about">About</a> </li>
+                
+                  <li><div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+</div></li>
+            </div>
+          </div>
+                
+      </div>
+    </div>
+
+</header>
+
+
+
+      
+            
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;"><article id="post-GitHub" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" class="article-title" itemprop="name">
+      GitHub
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/posts/github.html" class="article-date">
+	  <time datetime="2017-11-18T15:40:38.000Z" itemprop="datePublished">2017-11-18</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/Uncategorized/">Uncategorized</a>
+
+      
+	<a class="article-views">
+	<span id="busuanzi_container_page_pv">
+		PV:<span id="busuanzi_value_page_pv"></span>
+	</span>
+	</a>
+
+      
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Github访问速度慢以及显示不完全的解决办法"><a href="#Github访问速度慢以及显示不完全的解决办法" class="headerlink" title="Github访问速度慢以及显示不完全的解决办法"></a>Github访问速度慢以及显示不完全的解决办法</h2><p>参考了<a href="http://blog.sciencenet.cn/home.php?mod=space&uid=2577109&do=blog&quickforward=1&id=1087257" target="_blank" rel="noopener">这位博主</a>，修改  C:\Windows\System32\drivers\etc  中的hosts文件（PS：若没有修改权限，可以鼠标右键，属性，安全，修改权限。或者将hosts文件复制到桌面，修改之后，复制到原文件夹），将下面一段话添加到hosts文件中：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">\# GitHub Start </span><br><span class="line">192.30.253.112 github.com </span><br><span class="line">192.30.253.119 gist.github.com </span><br><span class="line">151.101.100.133 assets-cdn.github.com </span><br><span class="line">151.101.100.133 raw.githubusercontent.com </span><br><span class="line">151.101.100.133 gist.githubusercontent.com </span><br><span class="line">151.101.100.133 cloud.githubusercontent.com </span><br><span class="line">151.101.100.133 camo.githubusercontent.com </span><br><span class="line">151.101.100.133 avatars0.githubusercontent.com </span><br><span class="line">151.101.100.133 avatars1.githubusercontent.com </span><br><span class="line">151.101.100.133 avatars2.githubusercontent.com </span><br><span class="line">151.101.100.133 avatars3.githubusercontent.com </span><br><span class="line">151.101.100.133 avatars4.githubusercontent.com </span><br><span class="line">151.101.100.133 avatars5.githubusercontent.com </span><br><span class="line">151.101.100.133 avatars6.githubusercontent.com </span><br><span class="line">151.101.100.133 avatars7.githubusercontent.com </span><br><span class="line">151.101.100.133 avatars8.githubusercontent.com </span><br><span class="line">\# GitHub End</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="failed-to-push-some-refs-to-‘git-github-com’"><a href="#failed-to-push-some-refs-to-‘git-github-com’" class="headerlink" title="failed to push some refs to ‘git@github.com’"></a>failed to push some refs to ‘git@github.com’</h2><p>出现这个错误是因为你有远程库中的文件没有下载下来，所以你需要先运行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull origin master</span><br></pre></td></tr></table></figure>
+<p>然后你就看到了远程文件已经下载到你的工程里面并且自动合并了，你需要在本地库中添加新文件并且提交。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push -u origin master.</span><br></pre></td></tr></table></figure>
+
+<h2 id="fatal-remote-origin-already-exists"><a href="#fatal-remote-origin-already-exists" class="headerlink" title="fatal: remote origin already exists."></a>fatal: remote origin already exists.</h2><p>解决办法，依次输入如下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git remote rm origin </span><br><span class="line">git remote add origin [git@github.com:djqiang&#x2F;gitdemo.git](mailto:git@github.com:djqiang&#x2F;gitdemo.git)</span><br></pre></td></tr></table></figure>
+<p>如果输入<code>git remote rm origin</code>还是报错：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">error: Could not remove config section &#39;remote.origin&#39;.</span><br></pre></td></tr></table></figure>
+<p>我们需要修改gitconfig文件的内容：找到你的github的安装路径，我的是：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\\Users\\ASUS\\AppData\\Local\\GitHub\\PortableGit_ca477551eeb4aea0e4ae9fcd3358bd96720bb5c8\\etc</span><br></pre></td></tr></table></figure>
+<p>找到一个名为gitconfig的文件，把里面的<strong>[remote “origin”]</strong>那一行删掉就好了！</p>
+<h2 id="git无法pull仓库，refusing-to-merge-unrelated-histories"><a href="#git无法pull仓库，refusing-to-merge-unrelated-histories" class="headerlink" title="git无法pull仓库，refusing to merge unrelated histories"></a>git无法pull仓库，refusing to merge unrelated histories</h2><p>我在Github新建一个仓库，然后把本地一个仓库上传。 先pull，因为两个仓库不同，发现</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">refusing to merge unrelated histories</span><br></pre></td></tr></table></figure>
+<p>无法pull，因为他们是两个不同的项目，如果要把两个不同的项目合并，git需要添加一句代码，</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">--allow-unrelated-histories</span><br></pre></td></tr></table></figure>
+<p>假如我们的源是origin，分支是master，那么我们 需要这样写：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull origin master----allow-unrelated-histories</span><br></pre></td></tr></table></figure>
+
+<h2 id="已经设置ssh连接，却仍要输入账户密码"><a href="#已经设置ssh连接，却仍要输入账户密码" class="headerlink" title="已经设置ssh连接，却仍要输入账户密码"></a>已经设置ssh连接，却仍要输入账户密码</h2><p>只需更新<a href="https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases" target="_blank" rel="noopener">Git Credential Manager for Windows</a>即可。</p>
+<h2 id="Github的分支"><a href="#Github的分支" class="headerlink" title="Github的分支"></a>Github的分支</h2><p>本地仓库文件夹中的内容会在执行切换分支命令之后自动切换到对应分支。如果将A分支中已上传到远程仓库的文件拷贝到B分支，然后在B分支中执行<code>git pull origin B</code>，则会提示<code>Everything up-to-date</code>，且Github个人主页中不会显示commited，这可能是由于在Github的远程仓库中不同分支中的同一文件只是多了一个索引，文件仍然只有一个，以节省空间。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+        
+	<div id="comment">
+		<!-- 来必力City版安装代码 -->
+		<div id="lv-container" data-id="city" data-uid="MTAyMC80MjgyMC8xOTM2Nw==">
+		<script type="text/javascript">
+		   (function(d, s) {
+		       var j, e = d.getElementsByTagName(s)[0];
+
+		       if (typeof LivereTower === 'function') { return; }
+
+		       j = d.createElement(s);
+		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+		       j.async = true;
+
+		       e.parentNode.insertBefore(j, e);
+		   })(document, 'script');
+		</script>
+		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+		</div>
+		<!-- City版安装代码已完成 -->
+	</div>
+
+
+
+      
+      
+        
+      
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/posts/netease-cloud-music-crawler.html" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          爬虫实战(2)——网易云音乐
+        
+      </div>
+    </a>
+  
+  
+    <a href="/posts/mit-linear-algebra-notes.html" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">MIT线性代数笔记</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+<!-- Table of Contents -->
+
+  <aside id="toc-sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">Contents</strong>
+    
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Github访问速度慢以及显示不完全的解决办法"><span class="nav-number">1.</span> <span class="nav-text">Github访问速度慢以及显示不完全的解决办法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#failed-to-push-some-refs-to-‘git-github-com’"><span class="nav-number">2.</span> <span class="nav-text">failed to push some refs to ‘git@github.com’</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#fatal-remote-origin-already-exists"><span class="nav-number">3.</span> <span class="nav-text">fatal: remote origin already exists.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git无法pull仓库，refusing-to-merge-unrelated-histories"><span class="nav-number">4.</span> <span class="nav-text">git无法pull仓库，refusing to merge unrelated histories</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#已经设置ssh连接，却仍要输入账户密码"><span class="nav-number">5.</span> <span class="nav-text">已经设置ssh连接，却仍要输入账户密码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Github的分支"><span class="nav-number">6.</span> <span class="nav-text">Github的分支</span></a></li></ol>
+    
+    </div>
+  </aside>
+</section>
+        
+      </div>
+      
+      <footer id="footer">
+  
+
+  <div class="container">
+      	<div class="row">
+	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
+	      <p id="copyRightEn">Copyright &copy; 2019 - 2020 JINGWANG All Rights Reserved.</p>
+	      
+	      
+    		<p class="busuanzi_uv">
+				UV : <span id="busuanzi_value_site_uv"></span> |  
+				PV : <span id="busuanzi_value_site_pv"></span>
+		    </p>
+  		   
+		</div>
+
+		
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
+    var allheader = document.getElementById("allheader");
+
+    wrapdiv.style.minHeight = document.body.offsetHeight + "px";
+    if (allheader != null) {
+      contentdiv.style.minHeight = document.body.offsetHeight - allheader.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    } else {
+      contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    }
+</script>
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/skateboarding" class="mobile-nav-link">Skateboarding</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    },
+    <!-- Tex是我自己加的 公式自动编号
+    TeX: {
+      equationNumbers: {
+        autoNumber: "AMS",
+      }
+    },
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/scripts.js"></script>
+
+
+
+
+
+  
+<script src="/js/dialog.js"></script>
+
+
+
+
+
+
+
+
+
+	<div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+
+	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+	</script>
+
+
+
+
+
+
+  </div>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!-- <h2 class="modal-title" id="myModalLabel">设置</h2> -->
+        <h2 class="modal-title" id="myModalLabel">Setting</h2>
+      </div>
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+
+
+      <div class="modal-body">
+          <!-- <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="javascript:setFontSize();" aria-expanded="true" aria-controls="collapseOne">
+              正文字号大小
+            </a>
+          </div> -->
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="javascript:setFontSize();" aria-expanded="true" aria-controls="collapseOne">
+              Font Size
+            </a>
+          </div>
+
+          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <!-- <div class="panel-body">
+            您已调整页面字体大小
+          </div> -->
+          <div class="panel-body">
+          Font size already changed, click again to cancel.
+          </div>
+        </div>
+
+
+
+          <!-- <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" onclick="javascript:setBackground();" aria-expanded="true" aria-controls="collapseTwo">
+              夜间护眼模式
+            </a> -->
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" onclick="javascript:setBackground();" aria-expanded="true" aria-controls="collapseTwo">
+              Night Mode
+            </a>
+        </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <!-- <div class="panel-body">
+            夜间模式已经开启，再次单击按钮即可关闭
+          </div> -->
+          <div class="panel-body">
+            Night mode is on, click again to close.
+          </div>
+        </div>
+
+        <div>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About<!--关 于-->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        </div>
+         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body">
+            JINGWANG
+          </div>
+          <div class="panel-body">
+            Copyright © 2020 JINGWANG All Rights Reserved.
+          </div>
+        </div>
+      </div>
+
+
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <div class="modal-footer">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+  
+    <a id="menu-switch"><i class="fa fa-bars fa-lg"></i></a>
+  
+</body>
+</html>
