@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>anaconda | JINGWANG</title>
+  <title>anaconda | Jingwang Li</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   <meta name="keywords" content="Python" />
@@ -15,15 +15,15 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="Anaconda">
 <meta property="og:url" content="http://jingwang.site/posts/anaconda.html">
-<meta property="og:site_name" content="JINGWANG">
+<meta property="og:site_name" content="Jingwang Li">
 <meta property="og:description" content="Anaconda的安装2018.12.5 更新： 之前出现的问题主要是由于我之前配置的 java 的环境变量和 anaconda 发生了冲突，如果没有安装过 java 的话可以忽略。 还有就是之前说过最好不要安装新版本，但是上次新电脑配置Python环境的时候安装的最新版也没啥问题，不过也有可能因电脑而异，可以先试下最新版本，如果有问题的话再尝试安装老版本吧。 下载请认准清华大学开源软件镜像站,版">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2017-11-01T10:55:36.000Z">
-<meta property="article:modified_time" content="2020-01-03T15:34:58.169Z">
+<meta property="article:modified_time" content="2020-01-07T15:33:18.410Z">
 <meta property="article:tag" content="Python">
 <meta name="twitter:card" content="summary">
   
-    <link rel="alternate" href="/atom.xml" title="JINGWANG" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="Jingwang Li" type="application/atom+xml">
   
 
   
@@ -241,8 +241,7 @@
 <p>即在操作某 xxxx.pyd 文件时发生权限问题。 打开windows的任务管理器（task manager），关闭一切与 python 相关的进程，重新下载安装。 此时还会报错：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Requirement already satisfied: PyQt4&#x3D;&#x3D;4.11.4 from file</span><br></pre></td></tr></table></figure>
 <p>这是因为你上一次虽然没成功但是anconda里面里面已经有了关于pyqt4的文件夹，去这个路径下面<code>c:\\users\\wang\\anaconda3\\lib\\site-packages</code>，然后把名称里面带有pyqt4的文件夹都给删了就行了。</p>
-<hr>
-<p>今天用Spyder画图的时候发现图片只能显示在终端，之前查到的解决办法是：</p>
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2><p>今天用Spyder画图的时候发现图片只能显示在终端，之前查到的解决办法是：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">终端显示图片: In \[1\]: %matplotlib inline </span><br><span class="line">图片窗口显示图片: In \[2\]: %matplotlib qt</span><br></pre></td></tr></table></figure>
 <p>可是这次输入<code>%matplotlib qt</code>之后再运行画图程序就一直在运行中，根本停不下来。。。重新打开再试还是不行。 于是又打开了IPython，运行画图程序，画图窗口正常打开，白痴的我输入了<code>%matplotlib inline</code>，然后报错：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">UnknownBackend: No event loop integration for &#39;inline&#39;. Supported event loops are: qt, qt4, qt5, gtk, gtk2, gtk3, tk, wx, pyglet, glut, osx</span><br></pre></td></tr></table></figure>
@@ -303,7 +302,7 @@
     </a>
   
   
-    <a href="/posts/cpp-notes.html" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/posts/cpp.html" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
       <div class="article-nav-title">C++学习笔记</div>
     </a>
@@ -319,7 +318,7 @@
     <div id="toc" class="toc-article">
     <strong class="toc-title">Contents</strong>
     
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Anaconda的安装"><span class="nav-number">1.</span> <span class="nav-text">Anaconda的安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Pandas-matplotlib无法显示中文"><span class="nav-number">2.</span> <span class="nav-text">Pandas matplotlib无法显示中文</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Jupyter-notebook更改起始目录"><span class="nav-number">3.</span> <span class="nav-text">Jupyter notebook更改起始目录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Jupyter-notebook更换主题"><span class="nav-number">4.</span> <span class="nav-text">Jupyter notebook更换主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#matplotlib绘图窗口"><span class="nav-number">5.</span> <span class="nav-text">matplotlib绘图窗口</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Anaconda的安装"><span class="nav-number">1.</span> <span class="nav-text">Anaconda的安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Pandas-matplotlib无法显示中文"><span class="nav-number">2.</span> <span class="nav-text">Pandas matplotlib无法显示中文</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Jupyter-notebook更改起始目录"><span class="nav-number">3.</span> <span class="nav-text">Jupyter notebook更改起始目录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Jupyter-notebook更换主题"><span class="nav-number">4.</span> <span class="nav-text">Jupyter notebook更换主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#matplotlib绘图窗口"><span class="nav-number">5.</span> <span class="nav-text">matplotlib绘图窗口</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">6.</span> <span class="nav-text"></span></a></li></ol>
     
     </div>
   </aside>
@@ -333,7 +332,7 @@
   <div class="container">
       	<div class="row">
 	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
-	      <p id="copyRightEn">Copyright &copy; 2019 - 2020 JINGWANG All Rights Reserved.</p>
+	      <p id="copyRightEn">Copyright &copy; 2019 - 2020 Jingwang Li All Rights Reserved.</p>
 	      
 	      
     		<p class="busuanzi_uv">
@@ -517,10 +516,10 @@
         </div>
          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
           <div class="panel-body">
-            JINGWANG
+            Jingwang Li
           </div>
           <div class="panel-body">
-            Copyright © 2020 JINGWANG All Rights Reserved.
+            Copyright © 2020 Jingwang Li All Rights Reserved.
           </div>
         </div>
       </div>

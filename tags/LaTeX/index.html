@@ -3,30 +3,22 @@
 <head>
   <meta charset="utf-8">
   
-  <title>mit线性代数笔记 | JINGWANG</title>
+  <title>tag: latex | Jingwang Li</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-    <meta name="keywords" content="Linear Algebra,Mathematics" />
   
   
   
-  
-  <meta name="description" content="Chapter 1:Introduction to VectorsA vector with two components corresponds to a point in the xy plane. The  components of v _are the coordinates of the point: _x&#x3D;v1  and  y&#x3D;v2._The arrow **ends at this">
-<meta property="og:type" content="article">
-<meta property="og:title" content="MIT线性代数笔记">
-<meta property="og:url" content="http://jingwang.site/posts/mit-linear-algebra-notes.html">
-<meta property="og:site_name" content="JINGWANG">
-<meta property="og:description" content="Chapter 1:Introduction to VectorsA vector with two components corresponds to a point in the xy plane. The  components of v _are the coordinates of the point: _x&#x3D;v1  and  y&#x3D;v2._The arrow **ends at this">
+  <meta name="description" content="Skater and Programmer">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jingwang Li">
+<meta property="og:url" content="http://jingwang.site/tags/LaTeX/index.html">
+<meta property="og:site_name" content="Jingwang Li">
+<meta property="og:description" content="Skater and Programmer">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://www.jingwangl.com/wp-content/uploads/2018/12/bc48d5c70419c5346d2bb5aaa40100fa.png">
-<meta property="article:published_time" content="2017-11-12T14:24:23.000Z">
-<meta property="article:modified_time" content="2019-12-20T10:22:23.568Z">
-<meta property="article:tag" content="Linear Algebra">
-<meta property="article:tag" content="Mathematics">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://www.jingwangl.com/wp-content/uploads/2018/12/bc48d5c70419c5346d2bb5aaa40100fa.png">
   
-    <link rel="alternate" href="/atom.xml" title="JINGWANG" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="Jingwang Li" type="application/atom+xml">
   
 
   
@@ -71,6 +63,8 @@
   
 
   
+    <link rel="stylesheet" href="/css/archive.css" >
+  
   
   
 
@@ -78,7 +72,7 @@
 
 
 
-  <body data-spy="scroll" data-target="#toc" data-offset="50">
+  <body>
 
 
   
@@ -101,7 +95,7 @@
             
               <a class="brand" style="
                  margin-top: 0px;"  
-                href="#" data-toggle="modal" data-target="#myModal" >
+                 >
                   <img width="124px" height="124px" alt="Hike News" src="/css/images/mylogo.jpg">
               </a>
             
@@ -174,117 +168,75 @@
             
       <div id="content" class="outer">
         
-          <section id="main" style="float:none;"><article id="post-MIT线性代数笔记" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
-  <div id="articleInner" class="article-inner">
-    
-    
-      <header class="article-header">
-        
+          <section id="main" style="float:none;">
   
-    <h1 class="thumb" class="article-title" itemprop="name">
-      MIT线性代数笔记
+  
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <h1><a href="/archives/2019" class="archive-year">2019</a></h1>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      
+	<a href="/posts/latex.html" class="archive-article-date">
+	  <time datetime="2019-04-17T11:53:32.000Z" itemprop="datePublished">2019-04-17</time>
+	</a>
+
+      
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="archive-article-title" href="/posts/latex.html">LaTeX</a>
     </h1>
   
 
-      </header>
-    
-    <div class="article-meta">
-      
-	<a href="/posts/mit-linear-algebra-notes.html" class="article-date">
-	  <time datetime="2017-11-12T14:24:23.000Z" itemprop="datePublished">2017-11-12</time>
-	</a>
-
-      
-    <a class="article-category-link" href="/categories/Mathematics/">Mathematics</a>
-
-      
-	<a class="article-views">
-	<span id="busuanzi_container_page_pv">
-		PV:<span id="busuanzi_value_page_pv"></span>
-	</span>
-	</a>
-
-      
-
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="Chapter-1-Introduction-to-Vectors"><a href="#Chapter-1-Introduction-to-Vectors" class="headerlink" title="Chapter 1:Introduction to Vectors"></a>Chapter 1:Introduction to Vectors</h2><p>A vector with two components corresponds to <strong>a point</strong> in the <em>xy</em> plane. The  components of <em>v _are the coordinates of the point: _x=v1  and  y=v2._The arrow **ends at this point(_v1,v2</em>),** when it <strong>satrts from (0,0).</strong> 之前我一直向量当作一个箭头，就像书上画的那样，但今天看到书里面写的之后有了新的认识 。其实n维向量就是n维空间内的一个点，不过是一个有方向的点，其方向从n维空间原点出发指向其本身。这样理解的话感觉好多东西都变得很清晰，比如 之前一直以为两个互相独立的二维向量的线性组合所构成的平面是由无数条箭头充满的。。。原来不是那样，就是一堆有向点而已嘛。<br><strong>Example</strong><br>For <strong>v</strong> = (1,0) and <strong>w</strong> =  (0,1), describe all the points c<strong>v</strong> and all the combinations c<strong>v</strong> + d<strong>w</strong> with and d(1) whole numbers c(2) nonnegative c &gt;= 0.<br><strong>Solution</strong><br>(1)无数条垂直于x轴且间距为1的直线<br>(2)xy平面的右半边<br>所以，只要记住向量是<strong>有向点</strong>而不是箭头就好了！！</p>
-<h2 id="Chapter-2-Solving-Linear-Equations"><a href="#Chapter-2-Solving-Linear-Equations" class="headerlink" title="Chapter 2:Solving Linear Equations"></a>Chapter 2:Solving Linear Equations</h2><p><img src="http://www.jingwangl.com/wp-content/uploads/2018/12/bc48d5c70419c5346d2bb5aaa40100fa.png" alt=""></p>
-<h2 id="Chapter-3-Vector-Spaces-and-Subspaces"><a href="#Chapter-3-Vector-Spaces-and-Subspaces" class="headerlink" title="Chapter 3:Vector Spaces and Subspaces"></a>Chapter 3:Vector Spaces and Subspaces</h2>
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-      
-        
-	<div id="comment">
-		<!-- 来必力City版安装代码 -->
-		<div id="lv-container" data-id="city" data-uid="MTAyMC80MjgyMC8xOTM2Nw==">
-		<script type="text/javascript">
-		   (function(d, s) {
-		       var j, e = d.getElementsByTagName(s)[0];
-
-		       if (typeof LivereTower === 'function') { return; }
-
-		       j = d.createElement(s);
-		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-		       j.async = true;
-
-		       e.parentNode.insertBefore(j, e);
-		   })(document, 'script');
-		</script>
-		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
-		</div>
-		<!-- City版安装代码已完成 -->
-	</div>
-
-
-
-      
-      
-        
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linear-Algebra/" rel="tag">Linear Algebra</a></li></ul>
-
-      
-
-    </footer>
+    </header>
   </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/posts/github.html" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          GitHub
-        
-      </div>
-    </a>
-  
-  
-    <a href="/posts/c01a18e7.html" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">霍夫曼树</div>
-    </a>
-  
-</nav>
-
-  
 </article>
-
-<!-- Table of Contents -->
-
-  <aside id="toc-sidebar">
-    <div id="toc" class="toc-article">
-    <strong class="toc-title">Contents</strong>
+  
     
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Chapter-1-Introduction-to-Vectors"><span class="nav-number">1.</span> <span class="nav-text">Chapter 1:Introduction to Vectors</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chapter-2-Solving-Linear-Equations"><span class="nav-number">2.</span> <span class="nav-text">Chapter 2:Solving Linear Equations</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chapter-3-Vector-Spaces-and-Subspaces"><span class="nav-number">3.</span> <span class="nav-text">Chapter 3:Vector Spaces and Subspaces</span></a></li></ol>
     
-    </div>
-  </aside>
+      
+        </div></section>
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <h1><a href="/archives/2018" class="archive-year">2018</a></h1>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      
+	<a href="/posts/sublime-text.html" class="archive-article-date">
+	  <time datetime="2018-05-06T04:15:20.000Z" itemprop="datePublished">2018-05-06</time>
+	</a>
+
+      
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="archive-article-title" href="/posts/sublime-text.html">Sublime Text</a>
+    </h1>
+  
+
+    </header>
+  </div>
+</article>
+  
+  
+    </div></section>
+  
+
+
 </section>
         
       </div>
@@ -295,7 +247,7 @@
   <div class="container">
       	<div class="row">
 	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
-	      <p id="copyRightEn">Copyright &copy; 2019 - 2020 JINGWANG All Rights Reserved.</p>
+	      <p id="copyRightEn">Copyright &copy; 2019 - 2020 Jingwang Li All Rights Reserved.</p>
 	      
 	      
     		<p class="busuanzi_uv">
@@ -395,10 +347,6 @@
 
 
 
-  
-<script src="/js/dialog.js"></script>
-
-
 
 
 
@@ -479,10 +427,10 @@
         </div>
          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
           <div class="panel-body">
-            JINGWANG
+            Jingwang Li
           </div>
           <div class="panel-body">
-            Copyright © 2020 JINGWANG All Rights Reserved.
+            Copyright © 2020 Jingwang Li All Rights Reserved.
           </div>
         </div>
       </div>
@@ -499,8 +447,6 @@
   
   <a id="rocket" href="#top" class=""></a>
   <script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
-  
-    <a id="menu-switch"><i class="fa fa-bars fa-lg"></i></a>
   
 </body>
 </html>
