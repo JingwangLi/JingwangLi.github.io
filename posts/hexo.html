@@ -19,7 +19,7 @@
 <meta property="og:description" content="设置新建文章的默认信息新建文章的默认信息可以在D:\blog\scaffolds路径下的post文件中进行修改，注意：一定要在blog路径下的scaffolds中的post文件中修改才有效，在node_moudules目录下同样有scaffolds，但是在其中修改是无效的。 添加图床本来打算用七牛云，然而七牛云的测试域名的有效期变成了一个月，除非你用备案过的域名，所以选择用Github和PicGo">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2019-04-17T12:08:31.000Z">
-<meta property="article:modified_time" content="2020-01-08T05:36:59.518Z">
+<meta property="article:modified_time" content="2020-01-11T13:33:25.631Z">
 <meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
   
@@ -192,7 +192,7 @@
 	</a>
 
       
-    <a class="article-category-link" href="/categories/Tools/">Tools</a>
+    <a class="article-category-link" href="/categories/tools/">Tools</a>
 
       
 	<a class="article-views">
@@ -215,7 +215,7 @@
 <p>注意，如果评论者使用来必力评论的时候如果登录的不是来必力账号而是第三方账号，那么你的回复评论者不会被通知到(也无法被通知到，因为第三方平台仅仅只给了一次登录授权)，所以评论者只能通过查看文章页面才能得知是否被回复。</p>
 <h2 id="新建page名首字母大写"><a href="#新建page名首字母大写" class="headerlink" title="新建page名首字母大写"></a>新建page名首字母大写</h2><p>新建page名若是英文，则需要在<code>D:\blog\themes\hiker\languages\default.yml</code>中添加一条<code>skateboard: Skateboard</code>，方能实现首页显示的page名首字母为大写，否则即使<code>D:\blog\source</code>路径下的page文件夹名为大写，首页仍然会显示小写。</p>
 <h2 id="新建page下放多篇文章"><a href="#新建page下放多篇文章" class="headerlink" title="新建page下放多篇文章"></a>新建page下放多篇文章</h2><p>参考该答主的<a href="https://www.zhihu.com/question/33324071/answer/247195699" target="_blank" rel="noopener">回答</a>即可，注意，高赞答主的方法不可行，其实非常简单，不想高赞答主说的那么麻烦，只需在主题的_config.yml文件中的menu下面增加一条<code>PageName: /categories/PageName/</code>，便会自动多出一个PageName页面，其内容便是所有category为PageName的文章的目录，类似Archives页面，而无需手动新建一个页面。 </p>
-<h2 id="实时预览"><a href="#实时预览" class="headerlink" title="实时预览"></a>实时预览</h2><p>可参考<a href="https://blog.mutoe.com/2016/hexo-post-livereload-edit/" target="_blank" rel="noopener">此文章</a>，安装hexo_browsersync插件即可。</p>
+<h2 id="实时预览"><a href="#实时预览" class="headerlink" title="实时预览"></a>实时预览</h2><p>可参考<a href="https://blog.mutoe.com/2016/hexo-post-livereload-edit/" target="_blank" rel="noopener">此文章</a>，安装hexo-browsersync插件即可。</p>
 <p>更新：该插件用着用着就失效了，不知道什么时候又好了，时好时坏，不过hexo更新到4.2.0(原来是3.8.0)版本之后又可以用了，就是不知道是不是还是时好时坏。</p>
 <p>更新：发现即使升级到4.2.0仍然时好时坏，其实是部分页面可以用而部分页面用不了，更奇怪的是有的页面刚刚还可以用编辑了一会儿就不行了，尚待解决。</p>
 <blockquote>
@@ -223,7 +223,11 @@
 </blockquote>
 <h2 id="网站上出现了两篇一样的文章"><a href="#网站上出现了两篇一样的文章" class="headerlink" title="网站上出现了两篇一样的文章"></a>网站上出现了两篇一样的文章</h2><p>因为修改了一篇文章的标题却忘了将原来的文章删去。</p>
 <h2 id="预览"><a href="#预览" class="headerlink" title="预览"></a>预览</h2><p>修改主题及source内的文件可以不用重新<code>hexo s</code>即可预览，如果修改了其他地方的文件要重新<code>hexo s</code>才能预览。</p>
-<h2 id="默认分类-中英空格参数没用"><a href="#默认分类-中英空格参数没用" class="headerlink" title="默认分类 中英空格参数没用"></a>默认分类 中英空格参数没用</h2><h2 id="部分实体无法显示"><a href="#部分实体无法显示" class="headerlink" title="部分实体无法显示"></a>部分实体无法显示</h2><!-- # 部分实体无法显示
+<h2 id="default-category"><a href="#default-category" class="headerlink" title="default_category"></a>default_category</h2><p><code>default_category</code>参数仅在<code>permalink</code>中含有<code>:category</code>时起作用：<code>如果文章没有分类，则是 default_category 配置信息</code>。而不是说在<code>Categories</code>页面中多出来一个<code>default_categor</code>类别包含所有未分类的文章。</p>
+<h2 id="中英空格参数没用"><a href="#中英空格参数没用" class="headerlink" title="中英空格参数没用"></a>中英空格参数没用</h2><blockquote>
+<p><a href="https://hexo.io/zh-cn/docs/permalinks.html" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/permalinks.html</a></p>
+</blockquote>
+<h2 id="部分实体无法显示"><a href="#部分实体无法显示" class="headerlink" title="部分实体无法显示"></a>部分实体无法显示</h2><!-- # 部分实体无法显示
 
 ## 部分实体无法显示
 
@@ -231,7 +235,12 @@
 
 #### 部分实体无法显示 -->
 
-<h2 id="LaTeX公式无法正常换行"><a href="#LaTeX公式无法正常换行" class="headerlink" title="LaTeX公式无法正常换行"></a>LaTeX公式无法正常换行</h2>
+<h2 id="LaTeX公式无法正常换行"><a href="#LaTeX公式无法正常换行" class="headerlink" title="LaTeX公式无法正常换行"></a>LaTeX公式无法正常换行</h2><h2 id="开启issues"><a href="#开启issues" class="headerlink" title="开启issues"></a>开启issues</h2><p>fork的仓库默认关闭issues，需要在<code>Setting-&gt;Options-&gt;Features</code>中手动打开，注意，Setting页面很长，要往下拉才看得到Features选项。</p>
+<blockquote>
+<p><a href="https://help.github.com/en/github/managing-your-work-on-github/disabling-issues" target="_blank" rel="noopener">https://help.github.com/en/github/managing-your-work-on-github/disabling-issues</a></p>
+</blockquote>
+<h2 id="url中的分类名和标签名映射为小写"><a href="#url中的分类名和标签名映射为小写" class="headerlink" title="url中的分类名和标签名映射为小写"></a>url中的分类名和标签名映射为小写</h2><p>默认情况下url中的分类名和标签名与原始名字一致，而不会转化为小写。url中包含大写字母我是无法接受的，但是如果为了url小写而将分类名和标签名改为小写是我更无法接受的。这可以通过在<code>category_map</code>和<code>tag_map</code>中添加原始名字到小写的映射来解决，但每增加一个分类或者标签都要手动添加映射是在太过麻烦，准备有时间提交个PR增加<code>category_case</code>和<code>tag_case</code>参数自动将大写映射为小写。</p>
+
       
     </div>
     <footer class="article-footer">
@@ -301,7 +310,7 @@
     <div id="toc" class="toc-article">
     <strong class="toc-title">Contents</strong>
     
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#设置新建文章的默认信息"><span class="nav-number">1.</span> <span class="nav-text">设置新建文章的默认信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加图床"><span class="nav-number">2.</span> <span class="nav-text">添加图床</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#来必力评论bug"><span class="nav-number">3.</span> <span class="nav-text">来必力评论bug</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#新建page名首字母大写"><span class="nav-number">4.</span> <span class="nav-text">新建page名首字母大写</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#新建page下放多篇文章"><span class="nav-number">5.</span> <span class="nav-text">新建page下放多篇文章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实时预览"><span class="nav-number">6.</span> <span class="nav-text">实时预览</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网站上出现了两篇一样的文章"><span class="nav-number">7.</span> <span class="nav-text">网站上出现了两篇一样的文章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#预览"><span class="nav-number">8.</span> <span class="nav-text">预览</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#默认分类-中英空格参数没用"><span class="nav-number">9.</span> <span class="nav-text">默认分类 中英空格参数没用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部分实体无法显示"><span class="nav-number">10.</span> <span class="nav-text">部分实体无法显示</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#LaTeX公式无法正常换行"><span class="nav-number">11.</span> <span class="nav-text">LaTeX公式无法正常换行</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#设置新建文章的默认信息"><span class="nav-number">1.</span> <span class="nav-text">设置新建文章的默认信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加图床"><span class="nav-number">2.</span> <span class="nav-text">添加图床</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#来必力评论bug"><span class="nav-number">3.</span> <span class="nav-text">来必力评论bug</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#新建page名首字母大写"><span class="nav-number">4.</span> <span class="nav-text">新建page名首字母大写</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#新建page下放多篇文章"><span class="nav-number">5.</span> <span class="nav-text">新建page下放多篇文章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实时预览"><span class="nav-number">6.</span> <span class="nav-text">实时预览</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网站上出现了两篇一样的文章"><span class="nav-number">7.</span> <span class="nav-text">网站上出现了两篇一样的文章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#预览"><span class="nav-number">8.</span> <span class="nav-text">预览</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#default-category"><span class="nav-number">9.</span> <span class="nav-text">default_category</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#中英空格参数没用"><span class="nav-number">10.</span> <span class="nav-text">中英空格参数没用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部分实体无法显示"><span class="nav-number">11.</span> <span class="nav-text">部分实体无法显示</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#LaTeX公式无法正常换行"><span class="nav-number">12.</span> <span class="nav-text">LaTeX公式无法正常换行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开启issues"><span class="nav-number">13.</span> <span class="nav-text">开启issues</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#url中的分类名和标签名映射为小写"><span class="nav-number">14.</span> <span class="nav-text">url中的分类名和标签名映射为小写</span></a></li></ol>
     
     </div>
   </aside>

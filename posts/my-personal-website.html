@@ -9,16 +9,16 @@
   
   
   
-  <meta name="description" content="添加足迹地图使用Echarts实现，主要参考了该文章。注意文章中的代码是有问题的，不能直接用，刚开始没发现还以为是下载的echarts.min.js或china.js(地图文件)有问题，实际上不是，echarts.min.js文件只需要在这里直接点下载即可，无需勾选全部选项，至于地图文件可以利用搜索引擎下载。因此footprint文件需要直接在作者的足迹地图界面通过查看源代码的方式获取，当然也可以">
+  <meta name="description" content="hiker主题的个性化修改hiker这个主题非常不错，但是也存在一些小问题，然而之前不论是提issue还是发email作者均未回复，这次闲下来所幸自己折腾折腾全给解决了，做下来发现其实并不像想象中的那么难，总的来说，就是涉及到前端的东西一定要善用浏览器的F12调试功能。修改的地方有：  删去新建page的日期和评论功能。在hiker主题中，page的格式继承自article，所以原来的代码中，D:">
 <meta property="og:type" content="article">
 <meta property="og:title" content="我的个人网站升级之路">
 <meta property="og:url" content="http://jingwang.site/posts/my-personal-website.html">
 <meta property="og:site_name" content="Jingwang Li">
-<meta property="og:description" content="添加足迹地图使用Echarts实现，主要参考了该文章。注意文章中的代码是有问题的，不能直接用，刚开始没发现还以为是下载的echarts.min.js或china.js(地图文件)有问题，实际上不是，echarts.min.js文件只需要在这里直接点下载即可，无需勾选全部选项，至于地图文件可以利用搜索引擎下载。因此footprint文件需要直接在作者的足迹地图界面通过查看源代码的方式获取，当然也可以">
+<meta property="og:description" content="hiker主题的个性化修改hiker这个主题非常不错，但是也存在一些小问题，然而之前不论是提issue还是发email作者均未回复，这次闲下来所幸自己折腾折腾全给解决了，做下来发现其实并不像想象中的那么难，总的来说，就是涉及到前端的东西一定要善用浏览器的F12调试功能。修改的地方有：  删去新建page的日期和评论功能。在hiker主题中，page的格式继承自article，所以原来的代码中，D:">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://jingwang.site/file//img/20191220220317.png">
 <meta property="article:published_time" content="2020-01-08T04:54:40.000Z">
-<meta property="article:modified_time" content="2020-01-08T05:37:03.290Z">
+<meta property="article:modified_time" content="2020-01-11T13:58:12.828Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://jingwang.site/file//img/20191220220317.png">
   
@@ -191,7 +191,7 @@
 	</a>
 
       
-    <a class="article-category-link" href="/categories/Uncategorized/">Uncategorized</a>
+    <a class="article-category-link" href="/categories/uncategorized/">Uncategorized</a>
 
       
 	<a class="article-views">
@@ -205,15 +205,11 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="添加足迹地图"><a href="#添加足迹地图" class="headerlink" title="添加足迹地图"></a>添加足迹地图</h2><p>使用Echarts实现，主要参考了<a href="https://docle.github.io/2018/04/06/Use-ECharts-To-Build-A-[footprint]-Page/" target="_blank" rel="noopener">该文章</a>。注意文章中的代码是有问题的，不能直接用，刚开始没发现还以为是下载的echarts.min.js或china.js(地图文件)有问题，实际上不是，echarts.min.js文件只需要在<a href="https://www.echartsjs.com/zh/builder.html" target="_blank" rel="noopener">这里</a>直接点下载即可，无需勾选全部选项，至于地图文件可以利用搜索引擎下载。因此footprint文件需要直接在作者的足迹地图界面通过查看源代码的方式获取，当然也可以用我写的，我自己调整了一下代码，加入了一个足迹点大小可变的功能，如下：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">symbolSize:  <span class="function"><span class="keyword">function</span> (<span class="params">val</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">5</span> + <span class="number">0.5</span>*val[<span class="number">3</span>];</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
-<p>其中val[3]表示足迹点大小的参数，注意它是value数组的第二个元素，但是value前面已经有name和coordinate，所以index是3。</p>
-<h2 id="hiker主题的个性化修改"><a href="#hiker主题的个性化修改" class="headerlink" title="hiker主题的个性化修改"></a>hiker主题的个性化修改</h2><p>hiker这个主题非常不错，但是也存在一些小问题，然而之前不论是提issue还是发email作者均未回复，这次闲下来所幸自己折腾折腾全给解决了，做下来发现其实并不像想象中的那么难，总的来说，就是涉及到前端的东西一定要善用浏览器的F12调试功能。修改的地方有：</p>
+        <h2 id="hiker主题的个性化修改"><a href="#hiker主题的个性化修改" class="headerlink" title="hiker主题的个性化修改"></a>hiker主题的个性化修改</h2><p>hiker这个主题非常不错，但是也存在一些小问题，然而之前不论是提issue还是发email作者均未回复，这次闲下来所幸自己折腾折腾全给解决了，做下来发现其实并不像想象中的那么难，总的来说，就是涉及到前端的东西一定要善用浏览器的F12调试功能。修改的地方有：</p>
 <ul>
-<li>删去新建page的日期和评论功能。在hiker主题中，page的格式继承自article，所以原来的代码中，<code>D:\blog\themes\hiker\layout\page.ejs</code>中所引用的文件是<code>D:\blog\themes\hiker\layout\_particla\article.ejs</code>，所以可以将article.ejs再复制一份，删去其中和date、comment相关的代码，然后在page.ejs中引用该文件即可。</li>
-</ul>
-<p>更新：发现<code>D:\blog\scaffolds</code>中有page，post和draft(草稿)的模板文件，直接去掉模板中的date应该也可以，且可以通过<code>comments: false</code>关闭评论。</p>
-<ul>
+<li><p>删去新建page的日期和评论功能。在hiker主题中，page的格式继承自article，所以原来的代码中，<code>D:\blog\themes\hiker\layout\page.ejs</code>中所引用的文件是<code>D:\blog\themes\hiker\layout\_particla\article.ejs</code>，所以可以将article.ejs再复制一份，删去其中和date、comment相关的代码，然后在page.ejs中引用该文件即可。</p>
+<p>  更新：发现<code>D:\blog\scaffolds</code>中有page，post和draft(草稿)的模板文件，直接去掉模板中的date应该也可以，且可以通过<code>comments: false</code>关闭评论。</p>
+</li>
 <li><p>文章页面的交互界面(点击logo后出现)语言由中文改为英文。难的是找到编写该界面的代码文件的位置，开始的思路是右键查看页面源代码，然后通过页内搜索关键词找到该图形html代码，再从html代码中的关键词猜测代码文件的名字回主题文件内搜索，然而没找到。之后使用F12调试功能，起初只会用Elements，这和右键源代码是一样的，不过有层次，找起来更方便一些，但是事后证明这个代码文件的名字根本没在html文件中体现，所以一样找不到。后来想到这种交互功能应该是用js实现的，偶然发现Source界面出现的文件都是当前页面所需要的文件，于是在Source界面中的js文件中查找发现了dialog.js文件，接着在主题文件中搜索到dialog.ejs文件，成功修改。</p>
 </li>
 <li><p>Archives页面的Connect修改为Contact，email修改为Email。同样的思路，不过这次直接在html代码就发现了sidebar，一搜就搜到了，进而发现了需要修改的<code>\_widget\social.ejs</code>文件，不过仅仅在其中修改email为Email还不行，修改之后发现email图标直接没了，改回去之后试了试上个部分的方法，即在default.yml中将email映射为Email也不行，最后发现是因为该代码中的email是一个key，不是用于显示而是匹配，所以要将_config.yml中的email也改为Email才行。此外，还发现social.ejs中没有关于github的代码，其所在文件夹中也没找到。</p>
@@ -227,10 +223,15 @@
 </li>
 <li><p>修改title和description的字体，大小写以及字符间距。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.homelogoback&gt;h1&gt;a &#123;</span><br><span class="line">    color: #000;</span><br><span class="line">    letter-spacing: 2px;</span><br><span class="line">    &#x2F;*letter-spacing: 9px;*&#x2F;</span><br><span class="line">    &#x2F;*text-transform: uppercase;*&#x2F;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+</li>
+<li><p>网站底部增加社交链接</p>
 </li>
 </ul>
-<h2 id="添加滑板地图"><a href="#添加滑板地图" class="headerlink" title="添加滑板地图"></a>添加滑板地图</h2><h2 id="访问速度优化"><a href="#访问速度优化" class="headerlink" title="访问速度优化"></a>访问速度优化</h2>
+<h2 id="添加足迹地图"><a href="#添加足迹地图" class="headerlink" title="添加足迹地图"></a>添加足迹地图</h2><p>使用Echarts实现，主要参考了<a href="https://docle.github.io/2018/04/06/Use-ECharts-To-Build-A-[footprint]-Page/" target="_blank" rel="noopener">该文章</a>。注意文章中的代码是有问题的，不能直接用，刚开始没发现还以为是下载的echarts.min.js或china.js(地图文件)有问题，实际上不是，echarts.min.js文件只需要在<a href="https://www.echartsjs.com/zh/builder.html" target="_blank" rel="noopener">这里</a>直接点下载即可，无需勾选全部选项，至于地图文件可以利用搜索引擎下载。因此footprint文件需要直接在作者的足迹地图界面通过查看源代码的方式获取，当然也可以用我写的，我自己调整了一下代码，加入了一个足迹点大小可变的功能，如下：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">symbolSize:  <span class="function"><span class="keyword">function</span> (<span class="params">val</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">5</span> + <span class="number">0.5</span>*val[<span class="number">3</span>];</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+<p>其中val[3]表示足迹点大小的参数，注意它是value数组的第二个元素，但是value前面已经有name和coordinate，所以index是3。</p>
+<h2 id="添加滑板地图"><a href="#添加滑板地图" class="headerlink" title="添加滑板地图"></a>添加滑板地图</h2><h2 id="访问速度优化"><a href="#访问速度优化" class="headerlink" title="访问速度优化"></a>访问速度优化</h2><h2 id="SEO优化"><a href="#SEO优化" class="headerlink" title="SEO优化"></a>SEO优化</h2><p>考虑部署到Netlify.</p>
+<h2 id="升级评论系统"><a href="#升级评论系统" class="headerlink" title="升级评论系统"></a>升级评论系统</h2><h2 id="多设备发布"><a href="#多设备发布" class="headerlink" title="多设备发布"></a>多设备发布</h2>
       
     </div>
     <footer class="article-footer">
@@ -272,6 +273,15 @@
     
 <nav id="article-nav">
   
+    <a href="/posts/softwares.html" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          软件问题汇总
+        
+      </div>
+    </a>
+  
   
     <a href="/posts/front-end.html" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
@@ -289,7 +299,7 @@
     <div id="toc" class="toc-article">
     <strong class="toc-title">Contents</strong>
     
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#添加足迹地图"><span class="nav-number">1.</span> <span class="nav-text">添加足迹地图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hiker主题的个性化修改"><span class="nav-number">2.</span> <span class="nav-text">hiker主题的个性化修改</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加滑板地图"><span class="nav-number">3.</span> <span class="nav-text">添加滑板地图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#访问速度优化"><span class="nav-number">4.</span> <span class="nav-text">访问速度优化</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#hiker主题的个性化修改"><span class="nav-number">1.</span> <span class="nav-text">hiker主题的个性化修改</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加足迹地图"><span class="nav-number">2.</span> <span class="nav-text">添加足迹地图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加滑板地图"><span class="nav-number">3.</span> <span class="nav-text">添加滑板地图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#访问速度优化"><span class="nav-number">4.</span> <span class="nav-text">访问速度优化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SEO优化"><span class="nav-number">5.</span> <span class="nav-text">SEO优化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#升级评论系统"><span class="nav-number">6.</span> <span class="nav-text">升级评论系统</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多设备发布"><span class="nav-number">7.</span> <span class="nav-text">多设备发布</span></a></li></ol>
     
     </div>
   </aside>
