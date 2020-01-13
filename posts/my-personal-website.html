@@ -18,7 +18,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://jingwang.site/file//img/20191220220317.png">
 <meta property="article:published_time" content="2020-01-08T04:54:40.000Z">
-<meta property="article:modified_time" content="2020-01-11T13:58:12.828Z">
+<meta property="article:modified_time" content="2020-01-13T11:01:14.715Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://jingwang.site/file//img/20191220220317.png">
   
@@ -225,6 +225,8 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.homelogoback&gt;h1&gt;a &#123;</span><br><span class="line">    color: #000;</span><br><span class="line">    letter-spacing: 2px;</span><br><span class="line">    &#x2F;*letter-spacing: 9px;*&#x2F;</span><br><span class="line">    &#x2F;*text-transform: uppercase;*&#x2F;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>网站底部增加社交链接</p>
+</li>
+<li><p>修改全局字体大小</p>
 </li>
 </ul>
 <h2 id="添加足迹地图"><a href="#添加足迹地图" class="headerlink" title="添加足迹地图"></a>添加足迹地图</h2><p>使用Echarts实现，主要参考了<a href="https://docle.github.io/2018/04/06/Use-ECharts-To-Build-A-[footprint]-Page/" target="_blank" rel="noopener">该文章</a>。注意文章中的代码是有问题的，不能直接用，刚开始没发现还以为是下载的echarts.min.js或china.js(地图文件)有问题，实际上不是，echarts.min.js文件只需要在<a href="https://www.echartsjs.com/zh/builder.html" target="_blank" rel="noopener">这里</a>直接点下载即可，无需勾选全部选项，至于地图文件可以利用搜索引擎下载。因此footprint文件需要直接在作者的足迹地图界面通过查看源代码的方式获取，当然也可以用我写的，我自己调整了一下代码，加入了一个足迹点大小可变的功能，如下：</p>
