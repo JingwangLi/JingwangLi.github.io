@@ -17,7 +17,7 @@
 <meta property="og:description" content="知网下载文献文件名乱码win10 1803系统,使用chrome和Edge在知网下载的文献文件名都是乱码，应该是中文编码问题，解决方法在这儿。改了下代码，可以一次性修改目录下的所有文件。 12345678910import sys, ospath &#x3D; &quot;D:\\graduate\\Mobike&quot; # 路径改为你存放文献的路径for file_name in os.listdir(path):">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2018-11-17T15:26:36.000Z">
-<meta property="article:modified_time" content="2020-01-11T14:57:30.782Z">
+<meta property="article:modified_time" content="2020-01-14T14:29:02.182Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Jingwang Li" type="application/atom+xml">
@@ -214,6 +214,7 @@
 <h2 id="win10邮件应用配置"><a href="#win10邮件应用配置" class="headerlink" title="win10邮件应用配置"></a>win10邮件应用配置</h2><p>发件箱和已发送邮件的区别：发件箱中是在发送中的邮件，而已发送邮件是已经发送成功的邮件。发现只有客服端才有发件箱这种东西，而网页版邮箱都没有，可能是由于网页版邮箱会显示是否发送成功的状态，而客户端没有，所以加个发件箱来告诉你发送状态吧。</p>
 <p>起初发现win10邮件应用发送outlook邮件但qq邮箱却收不到，最后发现是进垃圾箱了，太坑了实在是。至于添加其他邮箱，比如foxmail，首先要注意的是，填的密码不是邮箱密码而是邮箱服务商给你的POP3或者IMAP协议的授权密码。其次，如果按照qq邮箱官方的设置方法(只有foxmail和outlook客户端的设置方法，需要选择收发服务器和端口号什么的，我起初就是仿照其设置win10邮件的，结果不行）或者网上说的方法，在“高级设置”中添加，不但需要填一大堆东西，而且最后会提示你“账户设置过期，需要更新密码或授权账户登录到此设备的权限”，任你怎么输入密码都不行。我自己摸索出来的方法是：在“其他账户”中添加。只需要填邮件地址和授权密码即可，也不用选择协议类型或者设置端口号什么的，它会自动设置。我很好奇它是怎么确定到底是POP3或者IMAP协议的，反正你什么也不用设置就可以正常收发邮件。最后发现，即使你输入的POP3协议的密码，它的接受服务器和端口仍然是对应于IMAP，但是竟然可以正常收发邮件。。。不过我用的IMAP协议，所以也无所谓。</p>
 <p>还有一个问题是，outlook邮箱非常令人无语，你无法随意设置发件名称，只能修改用户名，而且，它会根据你选择的语言类型自动显示姓在前或在后，所以如果你想安装英语习惯使发件名中姓在前的话，要么选择语言为英文，要么在个人信息中将姓填在名字一栏，名字填在姓一栏。。。不仅如此，无论是你改用户名或更改语言，它都会延迟好久(据说一个小时以上)才会更新过来，我以为我忘了保存，重新设置了好几遍。。。而且第一种方法我不确定是否管用，因为即使你将网页版邮箱的语言改为英文，但是系统是中文版的话，极有有可能win10邮件(该应用中并无切换语言的设置)中的发件名还是姓在前，除非你将系统语言切换为英文。</p>
+<p>更新：</p>
 <p>win10设置开机自启动<br>—·<br>将需要设置自启动的应用的快捷方式复制到<code>C:\Users\Wang\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup</code>，注意上述方式适用于我的两台电脑，而<code>C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp</code>则只适用于其中一台电脑。</p>
 <h2 id="无法修改hosts文件"><a href="#无法修改hosts文件" class="headerlink" title="无法修改hosts文件"></a>无法修改hosts文件</h2><p>尝试了以管理员身份运行sublime然后再把hosts文件拖进去，不知道为什么sublime打不开(具体而言，是拖过去圆圈转一会儿就什么反应都没了，右键打开也是这样)。又试了管理员身份运行记事本保存不了，记得之前明明可以的。<br>最后，在hosts所在位置以管理员身份打开PowerShell，运行<code>notepad hosts</code>，然后会自动用记事本打开hosts文件，再进行修改就可以保存了。</p>
 <blockquote>

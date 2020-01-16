@@ -16,9 +16,11 @@
 <meta property="og:site_name" content="Jingwang Li">
 <meta property="og:description" content="金山词霸Chrome中无法使用划词翻译之前在Chrome里面用金山词霸的划词翻译挺好用的，选中的词可以直接加生词本，但是今天新电脑装上Chrome之后发现Chrome用不了这个功能了。换了好几个词霸的版本还是没解决，然后尝试Edge也用不了 ，不过IE还是可以用的，所以排除了词霸的问题。接下来安装了旧版本的Chrome，试了一下还是不行，语言换成中文也不行。又仔细看了原来电脑上的Chrome的版本">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://jingwang.site/file/img/20200114103632.png">
 <meta property="article:published_time" content="2020-01-09T06:26:17.000Z">
-<meta property="article:modified_time" content="2020-01-13T11:02:32.597Z">
+<meta property="article:modified_time" content="2020-01-15T02:57:53.274Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://jingwang.site/file/img/20200114103632.png">
   
     <link rel="alternate" href="/atom.xml" title="Jingwang Li" type="application/atom+xml">
   
@@ -216,14 +218,21 @@
 <p>正常情况下划词之后旁边会显示划词图标，鼠标移到图标上便会自动显示词义。若划词图标始终不显示，可启用复制查词，这样一来划词之后<code>Ctrl+C</code>便会自动显示词义。</p>
 <h3 id="取词"><a href="#取词" class="headerlink" title="取词"></a>取词</h3><p>取词即鼠标放置在需要查询的单词之上便会自动显示词义，当然也可设置为<code>Ctrl+鼠标取词</code>等方式。取词方式适用于任何场景，包括系统界面。但我发现取词在外接屏幕上一直无效，至今仍未解决。</p>
 <h2 id="Mouse-Without-Borders"><a href="#Mouse-Without-Borders" class="headerlink" title="Mouse Without Borders"></a>Mouse Without Borders</h2><p>可使用Mouse Without Borders(MWB)实现一套键鼠操控多台电脑，注意其仅支持windowns系统。<br><code>如果你有几台电脑在同一局域网下（连接同一路由器或无线路由器），那么，你可以任意选择一台电脑，用它的键盘/鼠标（寻修网注：笔记本的触控板也适用）来操控其他几台电脑</code>。所以使用MWB的前提是你的多台电脑在同一局域网下，若它们连着同一台路由器当然是在同一局域网下，但如果是以下情况：A电脑连着无线网或有线网，然后A开热点给B。那么A和B是在同一局域网下吗？答案是肯定的。但是这种情况下A和B却无法连接成功，查看了两台电脑的IP地址发现不在同一网段(此处所指的同一网段是指IP地址仅最后一段数字不同，后来发现记错了，是IP地址和子网掩码取与后得到的网络标识相同，且不在同一网段并不能说明不在同一局域网，后面提到的网段均是错误理解)，于是尝试将B的IP地址设置为A的IP地址的相邻位置，发现A和B可以连接成功，但是B没网了，于是再将其IP地址改为自动获取，发现A和B可以连接而且B网络正常。将B重启之后A和B仍然可以连接成功，而且发现A和B的IP地址在同一网段。</p>
-<p>现在看来A和B要想连接成功，可能必须在同一网段内才行。至于是不是因为我修改B的IP地址又改回来这个操作导致了后面B被自动分配的IP地址和A在同一网段还需要时间检验，不过我认为B获得的IP地址应该是随机的不受上述操作影响。此外，’我的电脑’的’网络’中没有出现某电脑并不能说明某电脑和本电脑不在同一局域网中。</p>
+<p>现在看来A和B要想连接成功，可能必须在同一网段内才行。至于是不是因为我修改B的IP地址又改回来这个操作导致了后面B被自动分配的IP地址和A在同一网段还需要时间检验，不过我认为B获得的IP地址应该是随机的不受上述操作影响。此外，“我的电脑”的“网络”中没有出现某电脑并不能说明某电脑和本电脑不在同一局域网中。</p>
 <p>连接成功后指针在哪台电脑键盘就控制哪台电脑，两台电脑的位置也可以像外界屏幕那样调整。另外还发现win+L对AB都起作用，CTRL+ALT+DELETE仅对A起作用(无论指针在哪台电脑)。</p>
 <p>更新：发现MWB不支持双指滑动，但支持三指和四指。</p>
+<p>更新：发现有时在B上用<code>Ctrl+C</code>复制内容无效。</p>
 <blockquote>
 <p><a href="https://blog.csdn.net/guojunxiu/article/details/88778766" target="_blank" rel="noopener">如何判断两台设备是否在同一局域网内</a><br><a href="https://blog.csdn.net/jeffleo/article/details/54174835" target="_blank" rel="noopener">子网、局域网、网段的关系</a><br><a href="https://blog.csdn.net/andylauren/article/details/64540500" target="_blank" rel="noopener">一套键鼠操控多台电脑–Mouse Without Borders 设置教程</a></p>
 </blockquote>
 <h2 id="文电通PDF阅读器"><a href="#文电通PDF阅读器" class="headerlink" title="文电通PDF阅读器"></a>文电通PDF阅读器</h2><p>个人认为最好用的PDF阅读器，强烈推荐。</p>
-<h2 id="快速删除所有注释"><a href="#快速删除所有注释" class="headerlink" title="快速删除所有注释"></a>快速删除所有注释</h2><p>因为注释默认是按页码排序，又无法全选所有页码，所以要想删除注释只能一页一页地删。其实可以将排序方式改为按作者排序，一般来说作者也就你自己，所以只用删除一次即可。</p>
+<h3 id="快速删除所有注释"><a href="#快速删除所有注释" class="headerlink" title="快速删除所有注释"></a>快速删除所有注释</h3><p>因为注释默认是按页码排序，又无法全选所有页码，所以要想删除注释只能一页一页地删。其实可以将排序方式改为按作者排序，一般来说作者也就你自己，所以只用删除一次即可。</p>
+<h2 id="Adobe-Premiere"><a href="#Adobe-Premiere" class="headerlink" title="Adobe Premiere"></a>Adobe Premiere</h2><p>一开始安装的是最新版——CC2020，但安装完成后提示：<br><img src="https://jingwang.site/file/img/20200114103632.png" alt=""><br>实际上，上图是在我在更新了NVIDIA驱动之后的截图，开始是提示Intel和NVIDA驱动均不支持的。一般来说更新驱动都要在官网手动下载，直接在设备管理器里面更新是不行的。更新NVIDIA驱动时若在NVIDIA官网找不到Adobe官方推荐的SD类型，可用改用GRD类型。</p>
+<p>但在更新Itel图形驱动时却遇到了大问题，<a href="">Adobe官方</a>说符合符合Adobe条件的基准驱动程序是<code>24.20.100.6286</code>，然而我安装时却提示此<code>计算机不符合安装该软件的最低要求</code>。于是我又查询了Acer官网，发现官网上最新的驱动甚至还没有我现在的驱动版本高，又查询了Itel官网上支持第四代处理器的驱动程序，其最新版本为<code>15.40.44.5107</code>，下载之后提示<code>无法为此计算机验证正在安装的驱动程序，请从计算机制造商获取合适的驱动程序</code>，看来我现在的图形驱动已经是我这台电脑所能安装的最新的了，于是我放弃了。</p>
+<p>之后我发现<a href="https://helpx.adobe.com/cn/premiere-pro/system-requirements.html" target="_blank" rel="noopener">Adobe官方</a>推荐的13.0(应该是CC2019)以上的版本的最低配置要求是Intel第六代CPU，看来我这破电脑是真用不了，而13.0以下并没有上述要求，所以我就安装了12.0(CC2018)，这次就没有提示不支持了。</p>
+<blockquote>
+<p><a href="https://blog.csdn.net/wq6ylg08/article/details/103282594" target="_blank" rel="noopener">https://blog.csdn.net/wq6ylg08/article/details/103282594</a></p>
+</blockquote>
 
       
     </div>
@@ -292,7 +301,7 @@
     <div id="toc" class="toc-article">
     <strong class="toc-title">Contents</strong>
     
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#金山词霸"><span class="nav-number">1.</span> <span class="nav-text">金山词霸</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Chrome中无法使用划词翻译"><span class="nav-number">1.1.</span> <span class="nav-text">Chrome中无法使用划词翻译</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#有道词典"><span class="nav-number">2.</span> <span class="nav-text">有道词典</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#划词"><span class="nav-number">2.1.</span> <span class="nav-text">划词</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#取词"><span class="nav-number">2.2.</span> <span class="nav-text">取词</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Mouse-Without-Borders"><span class="nav-number">3.</span> <span class="nav-text">Mouse Without Borders</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文电通PDF阅读器"><span class="nav-number">4.</span> <span class="nav-text">文电通PDF阅读器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#快速删除所有注释"><span class="nav-number">5.</span> <span class="nav-text">快速删除所有注释</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#金山词霸"><span class="nav-number">1.</span> <span class="nav-text">金山词霸</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Chrome中无法使用划词翻译"><span class="nav-number">1.1.</span> <span class="nav-text">Chrome中无法使用划词翻译</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#有道词典"><span class="nav-number">2.</span> <span class="nav-text">有道词典</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#划词"><span class="nav-number">2.1.</span> <span class="nav-text">划词</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#取词"><span class="nav-number">2.2.</span> <span class="nav-text">取词</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Mouse-Without-Borders"><span class="nav-number">3.</span> <span class="nav-text">Mouse Without Borders</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文电通PDF阅读器"><span class="nav-number">4.</span> <span class="nav-text">文电通PDF阅读器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#快速删除所有注释"><span class="nav-number">4.1.</span> <span class="nav-text">快速删除所有注释</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Adobe-Premiere"><span class="nav-number">5.</span> <span class="nav-text">Adobe Premiere</span></a></li></ol>
     
     </div>
   </aside>
