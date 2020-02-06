@@ -19,7 +19,7 @@
 <meta property="og:description" content="Github访问速度慢以及显示不完全的解决办法修改C:\Windows\System32\drivers\etc中的hosts文件（PS：若没有修改权限，可以鼠标右键，属性，安全，修改权限。或者将hosts文件复制到桌面，修改之后，复制到原文件夹），将如下代码添加到hosts文件中： 123456789101112131415161718\# GitHub Start 192.30.253.112">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2017-11-18T15:40:38.000Z">
-<meta property="article:modified_time" content="2020-01-18T05:49:06.602Z">
+<meta property="article:modified_time" content="2020-02-06T06:47:10.852Z">
 <meta property="article:tag" content="Github">
 <meta name="twitter:card" content="summary">
   
@@ -210,6 +210,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">\# GitHub Start </span><br><span class="line">192.30.253.112 github.com </span><br><span class="line">192.30.253.119 gist.github.com </span><br><span class="line">151.101.100.133 assets-cdn.github.com </span><br><span class="line">151.101.100.133 raw.githubusercontent.com </span><br><span class="line">151.101.100.133 gist.githubusercontent.com </span><br><span class="line">151.101.100.133 cloud.githubusercontent.com </span><br><span class="line">151.101.100.133 camo.githubusercontent.com </span><br><span class="line">151.101.100.133 avatars0.githubusercontent.com </span><br><span class="line">151.101.100.133 avatars1.githubusercontent.com </span><br><span class="line">151.101.100.133 avatars2.githubusercontent.com </span><br><span class="line">151.101.100.133 avatars3.githubusercontent.com </span><br><span class="line">151.101.100.133 avatars4.githubusercontent.com </span><br><span class="line">151.101.100.133 avatars5.githubusercontent.com </span><br><span class="line">151.101.100.133 avatars6.githubusercontent.com </span><br><span class="line">151.101.100.133 avatars7.githubusercontent.com </span><br><span class="line">151.101.100.133 avatars8.githubusercontent.com </span><br><span class="line">\# GitHub End</span><br></pre></td></tr></table></figure>
 
 <p>更新：在学校的时候电脑B是可以正常访问Github的且速度很快，然而回家之后发现无法访问Github了，一直转圈但是网页就是显示不出来，可能是由于不同地区的网络有些差别。将上述代码添加到电脑B之后可以正常访问了然而一会儿又不行了，可参考<a href="https://www.cnblogs.com/baby123/p/10868095.html" target="_blank" rel="noopener">该文章</a>查询github.com对应的TTL值最小的IP地址，将其添加到hosts文件中即可。</p>
+<p>更新：又卡的不行，更新了IP地址还是卡，将其从从hosts文件去掉之后发现竟然又可以访问了，真是服了这垃圾网络。</p>
 <blockquote>
 <p><a href="https://www.cnblogs.com/baby123/p/10868095.html" target="_blank" rel="noopener">https://www.cnblogs.com/baby123/p/10868095.html</a><br><a href="http://blog.sciencenet.cn/home.php?mod=space&amp;uid=2577109&amp;do=blog&amp;quickforward=1&amp;id=1087257" target="_blank" rel="noopener">http://blog.sciencenet.cn/home.php?mod=space&amp;uid=2577109&amp;do=blog&amp;quickforward=1&amp;id=1087257</a></p>
 </blockquote>
@@ -244,32 +245,7 @@
     <footer class="article-footer">
       
       
-      
-        
-	<div id="comment">
-		<!-- 来必力City版安装代码 -->
-		<div id="lv-container" data-id="city" data-uid="MTAyMC80MjgyMC8xOTM2Nw==">
-		<script type="text/javascript">
-		   (function(d, s) {
-		       var j, e = d.getElementsByTagName(s)[0];
 
-		       if (typeof LivereTower === 'function') { return; }
-
-		       j = d.createElement(s);
-		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-		       j.async = true;
-
-		       e.parentNode.insertBefore(j, e);
-		   })(document, 'script');
-		</script>
-		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
-		</div>
-		<!-- City版安装代码已完成 -->
-	</div>
-
-
-
-      
       
         
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Github/" rel="tag">Github</a></li></ul>
@@ -298,6 +274,27 @@
     </a>
   
 </nav>
+
+  
+  
+    
+	<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+    <div id="vcomments"></div>
+    <script>
+        new Valine({
+            el: '#vcomments',
+            app_id: 'aToRWTvLvg1HEDjFRlAg7evB-gzGzoHsz',
+            app_key: 'Tp0GfA13PbrlgRPNUEU2XJ8H',
+            notify: false,
+            verify: false,
+            placeholder: 'If you have any problems, please let me know. You&#39;d better leave your email address at the top to get notification when I reply.',
+            avatar: 'retro',
+            pageSize: 10,
+            lang: 'en',
+            highlight: true
+        });
+    </script>
+
 
   
 </article>
@@ -465,7 +462,7 @@
             <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="javascript:setFontSize();" aria-expanded="true" aria-controls="collapseOne">
               正文字号大小
             </a>
-          </div> -->
+          </div>
           <div style="margin:6px;">
             <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="javascript:setFontSize();" aria-expanded="true" aria-controls="collapseOne">
               Font Size
@@ -473,13 +470,13 @@
           </div>
 
           <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-          <!-- <div class="panel-body">
+          <div class="panel-body">
             您已调整页面字体大小
-          </div> -->
+          </div>
           <div class="panel-body">
           Font size already changed, click again to cancel.
           </div>
-        </div>
+        </div> -->
 
 
 

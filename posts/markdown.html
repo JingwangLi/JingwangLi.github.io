@@ -11,20 +11,19 @@
   
   
   
-  <meta name="description" content="右键新建md文件网上很多教程都是这样，建立如下的.reg文件，然后执行，重启即可： 1234Windows Registry Editor Version 5.00[HKEY_CLASSES_ROOT\.md\ShellNew]&quot;NullFile&quot;&#x3D;&quot;&quot;&quot;FileName&quot;&#x3D;&quot;temp.md&quot; 但是">
+  <meta name="description" content="reveal.js和Markdown Preview的冲突上个部分提过，reveal-md渲染md时长公式无法显示的问题可以通过将字体改小解决。然而，在设置sublime的Markdown预览插件&amp;mdash;Markdown Preview的时候却发现在reveal-md中显示正常的md文件出现了奇怪的斜线和括号： md文件如下： 12345678## Chapter 1&lt;font fac">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Markdown">
 <meta property="og:url" content="http://jingwang.site/posts/markdown.html">
 <meta property="og:site_name" content="Jingwang Li">
-<meta property="og:description" content="右键新建md文件网上很多教程都是这样，建立如下的.reg文件，然后执行，重启即可： 1234Windows Registry Editor Version 5.00[HKEY_CLASSES_ROOT\.md\ShellNew]&quot;NullFile&quot;&#x3D;&quot;&quot;&quot;FileName&quot;&#x3D;&quot;temp.md&quot; 但是">
+<meta property="og:description" content="reveal.js和Markdown Preview的冲突上个部分提过，reveal-md渲染md时长公式无法显示的问题可以通过将字体改小解决。然而，在设置sublime的Markdown预览插件&amp;mdash;Markdown Preview的时候却发现在reveal-md中显示正常的md文件出现了奇怪的斜线和括号： md文件如下： 12345678## Chapter 1&lt;font fac">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://jingwang.site/file//img/20191215151236.png">
 <meta property="og:image" content="http://jingwang.site/file//img/20191217135319.png">
 <meta property="article:published_time" content="2019-12-15T07:03:44.000Z">
-<meta property="article:modified_time" content="2020-01-15T12:54:14.681Z">
+<meta property="article:modified_time" content="2020-02-05T03:48:45.114Z">
 <meta property="article:tag" content="Markdown">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://jingwang.site/file//img/20191215151236.png">
+<meta name="twitter:image" content="http://jingwang.site/file//img/20191217135319.png">
   
     <link rel="alternate" href="/atom.xml" title="Jingwang Li" type="application/atom+xml">
   
@@ -209,12 +208,7 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="右键新建md文件"><a href="#右键新建md文件" class="headerlink" title="右键新建md文件"></a>右键新建md文件</h2><p>网上很多教程都是这样，建立如下的.reg文件，然后执行，重启即可：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Windows Registry Editor Version 5.00</span><br><span class="line">[HKEY_CLASSES_ROOT\.md\ShellNew]</span><br><span class="line">&quot;NullFile&quot;&#x3D;&quot;&quot;</span><br><span class="line">&quot;FileName&quot;&#x3D;&quot;temp.md&quot;</span><br></pre></td></tr></table></figure>
-<p>但是我执行重启了好几次仍然无效，最后发现<a href="https://www.brothereye.cn/windows/479/" target="_blank" rel="noopener">这位博主</a>的方法是有效的，如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Windows Registry Editor Version 5.00</span><br><span class="line"></span><br><span class="line">[HKEY_CLASSES_ROOT\.md]</span><br><span class="line">@&#x3D;&quot;.md&quot;</span><br><span class="line"></span><br><span class="line">[HKEY_CLASSES_ROOT\.md\ShellNew]</span><br><span class="line">&quot;NullFile&quot;&#x3D;&quot;&quot;</span><br><span class="line">&quot;FileName&quot;&#x3D;&quot;temp.md&quot;</span><br></pre></td></tr></table></figure>
-<p>其实只改动了一处，.md项的值应该设置为.md，如下图所示：<br><img src="http://jingwang.site/file//img/20191215151236.png" alt=""><br>而别的教程中对此项的数值并无设置所以导致失败，一般来说其初始值是“数值未设置”或者”.md_auto_file”。右键建立其他类型文件的方法也是一样的，只需把.md改为.xx即可，注意，其实<strong>不需要重启</strong>即可生效。</p>
-<h2 id="reveal-js和Markdown-Preview的冲突"><a href="#reveal-js和Markdown-Preview的冲突" class="headerlink" title="reveal.js和Markdown Preview的冲突"></a>reveal.js和Markdown Preview的冲突</h2><p>上个部分提过，reveal-md渲染md时长公式无法显示的问题可以通过将字体改小解决。然而，在设置sublime的Markdown预览插件&mdash;Markdown Preview的时候却发现在reveal-md中显示正常的md文件出现了奇怪的斜线和括号：<br><img src="http://jingwang.site/file//img/20191217135319.png" alt=""></p>
+        <h2 id="reveal-js和Markdown-Preview的冲突"><a href="#reveal-js和Markdown-Preview的冲突" class="headerlink" title="reveal.js和Markdown Preview的冲突"></a>reveal.js和Markdown Preview的冲突</h2><p>上个部分提过，reveal-md渲染md时长公式无法显示的问题可以通过将字体改小解决。然而，在设置sublime的Markdown预览插件&mdash;Markdown Preview的时候却发现在reveal-md中显示正常的md文件出现了奇怪的斜线和括号：<br><img src="http://jingwang.site/file//img/20191217135319.png" alt=""></p>
 <p>md文件如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">## Chapter 1</span><br><span class="line">&lt;font face&#x3D;&quot;TimesNewRoman&quot; size&#x3D;5&gt;</span><br><span class="line">$$&#123;f(x)&#x3D;a_nx^n+a_&#123;n-1&#125;x^&#123;n-1&#125;+a_&#123;n-2&#125;x^&#123;n-1&#125;&#125;$$</span><br><span class="line">$$^&#123;C&#125;_&#123;t_0&#125;D^&#123;\alpha&#125;_tf(t)&#x3D;\frac&#123;1&#125;&#123;\Gamma(n-\alpha)&#125;&#123;\int_&#123;t_0&#125;^&#123;t&#125;&#123;\frac&#123;f^&#123;(n)&#125;(\tau)&#125;&#123;(t-\tau)^&#123;\alpha-n+1&#125;&#125;&#125;d&#123;\tau&#125;&#125;$$</span><br><span class="line"></span><br><span class="line">&lt;&#x2F;font&gt;</span><br><span class="line"></span><br><span class="line">[&lt;](#&#x2F;)</span><br></pre></td></tr></table></figure>
 <p>通过一番调整，发现如下代码可以正常显示：</p>
@@ -244,32 +238,7 @@
     <footer class="article-footer">
       
       
-      
-        
-	<div id="comment">
-		<!-- 来必力City版安装代码 -->
-		<div id="lv-container" data-id="city" data-uid="MTAyMC80MjgyMC8xOTM2Nw==">
-		<script type="text/javascript">
-		   (function(d, s) {
-		       var j, e = d.getElementsByTagName(s)[0];
 
-		       if (typeof LivereTower === 'function') { return; }
-
-		       j = d.createElement(s);
-		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-		       j.async = true;
-
-		       e.parentNode.insertBefore(j, e);
-		   })(document, 'script');
-		</script>
-		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
-		</div>
-		<!-- City版安装代码已完成 -->
-	</div>
-
-
-
-      
       
         
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Markdown/" rel="tag">Markdown</a></li></ul>
@@ -300,6 +269,27 @@
 </nav>
 
   
+  
+    
+	<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+    <div id="vcomments"></div>
+    <script>
+        new Valine({
+            el: '#vcomments',
+            app_id: 'aToRWTvLvg1HEDjFRlAg7evB-gzGzoHsz',
+            app_key: 'Tp0GfA13PbrlgRPNUEU2XJ8H',
+            notify: false,
+            verify: false,
+            placeholder: 'If you have any problems, please let me know. You&#39;d better leave your email address at the top to get notification when I reply.',
+            avatar: 'retro',
+            pageSize: 10,
+            lang: 'en',
+            highlight: true
+        });
+    </script>
+
+
+  
 </article>
 
 <!-- Table of Contents -->
@@ -308,7 +298,7 @@
     <div id="toc" class="toc-article">
     <strong class="toc-title">Contents</strong>
     
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#右键新建md文件"><span class="nav-number">1.</span> <span class="nav-text">右键新建md文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#reveal-js和Markdown-Preview的冲突"><span class="nav-number">2.</span> <span class="nav-text">reveal.js和Markdown Preview的冲突</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加空白行"><span class="nav-number">3.</span> <span class="nav-text">添加空白行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在Markdown中使用html语法"><span class="nav-number">4.</span> <span class="nav-text">在Markdown中使用html语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#居中"><span class="nav-number">5.</span> <span class="nav-text">居中</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多行公式单行显示"><span class="nav-number">6.</span> <span class="nav-text">多行公式单行显示</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加图片标题"><span class="nav-number">7.</span> <span class="nav-text">添加图片标题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#标题的写法"><span class="nav-number">8.</span> <span class="nav-text">标题的写法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Markdown-Preview换行问题"><span class="nav-number">9.</span> <span class="nav-text">Markdown Preview换行问题</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#reveal-js和Markdown-Preview的冲突"><span class="nav-number">1.</span> <span class="nav-text">reveal.js和Markdown Preview的冲突</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加空白行"><span class="nav-number">2.</span> <span class="nav-text">添加空白行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在Markdown中使用html语法"><span class="nav-number">3.</span> <span class="nav-text">在Markdown中使用html语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#居中"><span class="nav-number">4.</span> <span class="nav-text">居中</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多行公式单行显示"><span class="nav-number">5.</span> <span class="nav-text">多行公式单行显示</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加图片标题"><span class="nav-number">6.</span> <span class="nav-text">添加图片标题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#标题的写法"><span class="nav-number">7.</span> <span class="nav-text">标题的写法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Markdown-Preview换行问题"><span class="nav-number">8.</span> <span class="nav-text">Markdown Preview换行问题</span></a></li></ol>
     
     </div>
   </aside>
@@ -465,7 +455,7 @@
             <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="javascript:setFontSize();" aria-expanded="true" aria-controls="collapseOne">
               正文字号大小
             </a>
-          </div> -->
+          </div>
           <div style="margin:6px;">
             <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="javascript:setFontSize();" aria-expanded="true" aria-controls="collapseOne">
               Font Size
@@ -473,13 +463,13 @@
           </div>
 
           <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-          <!-- <div class="panel-body">
+          <div class="panel-body">
             您已调整页面字体大小
-          </div> -->
+          </div>
           <div class="panel-body">
           Font size already changed, click again to cancel.
           </div>
-        </div>
+        </div> -->
 
 
 

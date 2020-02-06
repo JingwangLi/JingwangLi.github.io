@@ -124,7 +124,7 @@ body,
 }
 body {
   background: #fff;
-  font: 14px Arial, "open sans", "Helvetica Neue", Helvetica Neue, Helvetica, Hiragino Sans GB, Microsoft Yahei, sans-serif;
+  font: 16px Arial, "open sans", "Helvetica Neue", Helvetica Neue, Helvetica, Hiragino Sans GB, Microsoft Yahei, sans-serif;
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizelegibility;
 }
@@ -683,7 +683,7 @@ body {
   line-height: 1.6em;
   outline: none !important;
   background: none !important;
-  font: 14px -apple-system, "Arial", BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font: 16px -apple-system, "Arial", BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   border: 0px;
 }
 .search-form-input:focus,
@@ -701,6 +701,9 @@ body {
 .search-form-input.st-ui-search-input::-webkit-search-cancel-button,
 .search-form-input.st-default-search-input::-webkit-search-cancel-button {
   -webkit-appearance: none;
+}
+.vsys {
+  display: none !important;
 }
 .article {
   color: #555;
@@ -753,7 +756,7 @@ body {
 .article-inner .h4,
 .article-inner .h5,
 .article-inner .h6 {
-  font-family: Arial, "Hiragino Sans GB", "Microsoft YaHei Light", "微软雅黑", SimSun, "宋体", Helvetica, Tahoma, "Arial sans-serif";
+  font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft YaHei", "微软雅黑", sans-serif;
 }
 .article-meta {
   text-align: center;
@@ -882,7 +885,7 @@ body {
 .article-header h1 {
   font-size: 25px;
   font-weight: bold;
-  font-family: Arial, "Hiragino Sans GB", "Microsoft YaHei Light", "微软雅黑", SimSun, "宋体", Helvetica, Tahoma, "Arial sans-serif";
+  font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft YaHei", "微软雅黑", sans-serif;
 }
 @media screen and (max-width: 479px) {
   .article-header h1 {
@@ -917,6 +920,7 @@ a.article-title:hover {
   text-decoration: none;
 }
 .article-entry {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft YaHei", "微软雅黑", sans-serif;
   color: #444;
   margin: 0 20px;
 }
@@ -996,7 +1000,7 @@ a.article-title:hover {
 }
 .article-entry blockquote {
   padding: 0.1px 20px;
-  font-family: Arial, "open sans", "Helvetica Neue", Helvetica Neue, Helvetica, Hiragino Sans GB, Microsoft Yahei, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft YaHei", "微软雅黑", sans-serif;
   font-size: 1.1em;
   color: rgba(44,44,44,0.6);
   margin: 1.4em 0px;
@@ -1004,11 +1008,11 @@ a.article-title:hover {
   background: rgba(208,211,248,0.15);
 }
 .article-entry blockquote p {
-  font-size: 14px;
+  font-size: 16px;
   margin: 15px 0;
 }
 .article-entry blockquote footer {
-  font-size: 14px;
+  font-size: 16px;
   margin: 1.6em 0;
   font-family: -apple-system, "Arial", BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
@@ -1032,7 +1036,7 @@ a.article-title:hover {
   }
 }
 .article-entry .pullquote p {
-  font-family: Georgia, Microsoft JhengHei, "sans serif";
+  font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft YaHei", "微软雅黑", sans-serif;
   font-size: 1.2em;
 }
 .article-entry .pullquote:before {
@@ -1184,7 +1188,7 @@ a.article-title:hover {
     margin-left: -4px;
     content: "";
     border-radius: 50%;
-    background: #eef1f8;
+    background: #999;
     -webkit-box-shadow: 0 1px 2px #fff;
     box-shadow: 0 1px 2px #fff;
   }
@@ -1225,7 +1229,7 @@ a.article-title:hover {
 .article-nav-caption {
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #eef1f8;
+  color: #999;
   line-height: 1em;
   font-weight: bold;
 }
@@ -1399,7 +1403,7 @@ a.article-title:hover {
   padding: 1em 1em 0 1em;
 }
 .toc-title {
-  font-size: 120%;
+  font-size: 1.2em;
 }
 #toc {
   width: inherit;
