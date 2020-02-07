@@ -19,7 +19,7 @@
 <meta property="og:description" content="设置新建文章的默认信息新建文章的默认信息可以在D:\blog\scaffolds路径下的post文件中进行修改，注意：一定要在blog路径下的scaffolds中的post文件中修改才有效，在node_moudules目录下同样有scaffolds，但是在其中修改是无效的。 添加图床本来打算用七牛云，然而七牛云的测试域名的有效期变成了一个月，除非你用备案过的域名，所以选择用Github和PicGo">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2019-04-17T12:08:31.000Z">
-<meta property="article:modified_time" content="2020-01-11T15:01:07.718Z">
+<meta property="article:modified_time" content="2020-02-07T03:45:45.356Z">
 <meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
   
@@ -227,14 +227,7 @@
 <h2 id="中英空格参数没用"><a href="#中英空格参数没用" class="headerlink" title="中英空格参数没用"></a>中英空格参数没用</h2><blockquote>
 <p><a href="https://hexo.io/zh-cn/docs/permalinks.html" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/permalinks.html</a></p>
 </blockquote>
-<h2 id="部分实体无法显示"><a href="#部分实体无法显示" class="headerlink" title="部分实体无法显示"></a>部分实体无法显示</h2><!-- # 部分实体无法显示
-
-## 部分实体无法显示
-
-### 部分实体无法显示
-
-#### 部分实体无法显示 -->
-
+<h2 id="部分实体无法显示"><a href="#部分实体无法显示" class="headerlink" title="部分实体无法显示"></a>部分实体无法显示</h2><p>可参考该<a href="https://github.com/hexojs/hexo/issues/4053" target="_blank" rel="noopener">issue</a>中的解决办法。</p>
 <h2 id="LaTeX公式无法正常换行"><a href="#LaTeX公式无法正常换行" class="headerlink" title="LaTeX公式无法正常换行"></a>LaTeX公式无法正常换行</h2><h2 id="url中的分类名和标签名映射为小写"><a href="#url中的分类名和标签名映射为小写" class="headerlink" title="url中的分类名和标签名映射为小写"></a>url中的分类名和标签名映射为小写</h2><p>默认情况下url中的分类名和标签名与原始名字一致，而不会转化为小写。url中包含大写字母我是无法接受的，但是如果为了url小写而将分类名和标签名改为小写是我更无法接受的。这可以通过在<code>category_map</code>和<code>tag_map</code>中添加原始名字到小写的映射来解决，但每增加一个分类或者标签都要手动添加映射是在太过麻烦，准备有时间提交个PR增加<code>category_case</code>和<code>tag_case</code>参数自动将大写映射为小写。</p>
 
       
@@ -313,20 +306,37 @@
       <footer id="footer">
   
 
+
+  <div class="widget2 widget2_athemes_social_icons">
+    <ul class="clearfix widget-social-icons">
+    
+        
+          <li><a href="https://github.com/JingwangLi" target="_blank" rel="noopener" title="Github"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+        
+    
+        
+          <li><a href="mailto:JingwangLi@foxmail.com" title="Email"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+        
+    
+    </ul>
+  </div>
+
   <div class="container">
+
       	<div class="row">
-	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
+
+	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/JingwangLi/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
 	      <p id="copyRightEn">Copyright &copy; 2019 - 2020 Jingwang Li All Rights Reserved.</p>
-	      
+
 	      
     		<p class="busuanzi_uv">
-				UV : <span id="busuanzi_value_site_uv"></span> |  
+				UV : <span id="busuanzi_value_site_uv"></span> |
 				PV : <span id="busuanzi_value_site_pv"></span>
 		    </p>
   		   
 		</div>
 
-		
+
   </div>
 </footer>
 
