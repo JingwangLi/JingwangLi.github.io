@@ -16,11 +16,11 @@
 <meta property="og:site_name" content="Jingwang Li">
 <meta property="og:description" content="知网下载文献文件名乱码win10 1803系统,使用chrome和Edge在知网下载的文献文件名都是乱码，应该是中文编码问题，解决方法在这儿。改了下代码，可以一次性修改目录下的所有文件。 12345678910import sys, ospath &#x3D; &quot;D:\\graduate\\Mobike&quot; # 路径改为你存放文献的路径for file_name in os.listdir(path):">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://jingwang.site/file//img/20191215151236.png">
+<meta property="og:image" content="http://storage.jingwang.site/img/20191215151236.png">
 <meta property="article:published_time" content="2018-11-17T15:26:36.000Z">
-<meta property="article:modified_time" content="2020-02-05T10:43:44.753Z">
+<meta property="article:modified_time" content="2020-06-19T10:46:12.130Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://jingwang.site/file//img/20191215151236.png">
+<meta name="twitter:image" content="http://storage.jingwang.site/img/20191215151236.png">
   
     <link rel="alternate" href="/atom.xml" title="Jingwang Li" type="application/atom+xml">
   
@@ -32,6 +32,8 @@
   
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:400,500,700&display=swap&subset=chinese-simplified" rel="stylesheet" type="text/css">
+
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
   <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
@@ -67,7 +69,7 @@
   
 
   
-  
+
   
 
 <meta name="generator" content="Hexo 4.2.0"></head>
@@ -115,7 +117,7 @@
                 
                   <li> <a class="main-nav-link" href="/skateboarding">Skateboarding</a> </li>
                 
-                  <li> <a class="main-nav-link" href="/about">About</a> </li>
+                  <li> <a class="main-nav-link" href="https:jingwang.site">About</a> </li>
                 
                   <li><div id="search-form-wrap">
 
@@ -217,7 +219,10 @@
 <p>起初发现win10邮件应用发送outlook邮件但qq邮箱却收不到，最后发现是进垃圾箱了，太坑了实在是。至于添加其他邮箱，比如foxmail，首先要注意的是，填的密码不是邮箱密码而是邮箱服务商给你的POP3或者IMAP协议的授权密码。其次，如果按照qq邮箱官方的设置方法(只有foxmail和outlook客户端的设置方法，需要选择收发服务器和端口号什么的，我起初就是仿照其设置win10邮件的，结果不行）或者网上说的方法，在“高级设置”中添加，不但需要填一大堆东西，而且最后会提示你“账户设置过期，需要更新密码或授权账户登录到此设备的权限”，任你怎么输入密码都不行。我自己摸索出来的方法是：在“其他账户”中添加。只需要填邮件地址和授权密码即可，也不用选择协议类型或者设置端口号什么的，它会自动设置。我很好奇它是怎么确定到底是POP3或者IMAP协议的，反正你什么也不用设置就可以正常收发邮件。最后发现，即使你输入的POP3协议的密码，它的接受服务器和端口仍然是对应于IMAP，但是竟然可以正常收发邮件。。。不过我用的IMAP协议，所以也无所谓。</p>
 <p>还有一个问题是，outlook邮箱非常令人无语，你无法随意设置发件名称，只能修改用户名，而且，它会根据你选择的语言类型自动显示姓在前或在后，所以如果你想安装英语习惯使发件名中姓在前的话，要么选择语言为英文，要么在个人信息中将姓填在名字一栏，名字填在姓一栏。。。不仅如此，无论是你改用户名或更改语言，它都会延迟好久(据说一个小时以上)才会更新过来，我以为我忘了保存，重新设置了好几遍。。。而且第一种方法我不确定是否管用，因为即使你将网页版邮箱的语言改为英文，但是系统是中文版的话，极有有可能win10邮件(该应用中并无切换语言的设置)中的发件名还是姓在前，除非你将系统语言切换为英文。</p>
 <p>更新：发现不论在任何语言、任何输入法下输入的标点符号全是中文符号，无法输入英文标点符号。在标题栏是可以正常输入英文标点符号的，但正文中就不行。我尝试了我的两台电脑，均是一样的情况，在任何输入法的英文输入模式下输入的标点符号都是中文的，包括单引号和双引号。</p>
-<p>win10设置开机自启动<br>—·<br>将需要设置自启动的应用的快捷方式复制到<code>C:\Users\Wang\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup</code>，注意上述方式适用于我的两台电脑，而<code>C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp</code>则只适用于其中一台电脑。</p>
+<p>更新：突然发现Foxmail账户中之前的邮件都没了，无论是发件箱还是收件箱都是空空如也，但是收发邮件也正常，在网页版邮箱中邮件也还在，推测可能是由于客户端会定期清理微软之外的邮箱账户中的邮件，因为在<code>设置-&gt;邮件列表-&gt;轻扫操作</code>一栏中有如下提示：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">以下账户不允许你存档：</span><br><span class="line">Foxmail</span><br><span class="line">这些账户的电子邮件将被删除。</span><br></pre></td></tr></table></figure>
+
+<h2 id="win10设置开机自启动"><a href="#win10设置开机自启动" class="headerlink" title="win10设置开机自启动"></a>win10设置开机自启动</h2><p>将需要设置自启动的应用的快捷方式复制到<code>C:\Users\Wang\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup</code>，注意上述方式适用于我的两台电脑，而<code>C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp</code>则只适用于其中一台电脑。</p>
 <h2 id="无法修改hosts文件"><a href="#无法修改hosts文件" class="headerlink" title="无法修改hosts文件"></a>无法修改hosts文件</h2><p>尝试了以管理员身份运行sublime然后再把hosts文件拖进去，不知道为什么sublime打不开(具体而言，是拖过去圆圈转一会儿就什么反应都没了，右键打开也是这样)。又试了管理员身份运行记事本保存不了，记得之前明明可以的。<br>最后，在hosts所在位置以管理员身份打开PowerShell，运行<code>notepad hosts</code>，然后会自动用记事本打开hosts文件，再进行修改就可以保存了。</p>
 <blockquote>
 <p><a href="https://blog.csdn.net/QQ724949275/article/details/80343445" target="_blank" rel="noopener">解决在Windows10没有修改hosts文件权限</a></p>
@@ -226,7 +231,11 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Windows Registry Editor Version 5.00</span><br><span class="line">[HKEY_CLASSES_ROOT\.md\ShellNew]</span><br><span class="line">&quot;NullFile&quot;&#x3D;&quot;&quot;</span><br><span class="line">&quot;FileName&quot;&#x3D;&quot;temp.md&quot;</span><br></pre></td></tr></table></figure>
 <p>但是我执行重启了好几次仍然无效，最后发现<a href="https://www.brothereye.cn/windows/479/" target="_blank" rel="noopener">这位博主</a>的方法是有效的，如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Windows Registry Editor Version 5.00</span><br><span class="line"></span><br><span class="line">[HKEY_CLASSES_ROOT\.md]</span><br><span class="line">@&#x3D;&quot;.md&quot;</span><br><span class="line"></span><br><span class="line">[HKEY_CLASSES_ROOT\.md\ShellNew]</span><br><span class="line">&quot;NullFile&quot;&#x3D;&quot;&quot;</span><br><span class="line">&quot;FileName&quot;&#x3D;&quot;temp.md&quot;</span><br></pre></td></tr></table></figure>
-<p>其实只改动了一处，.md项的值应该设置为.md，如下图所示：<br><img src="http://jingwang.site/file//img/20191215151236.png" alt=""><br>而别的教程中对此项的数值并无设置所以导致失败，一般来说其初始值是“数值未设置”或者”.md_auto_file”。右键建立其他类型文件的方法也是一样的，只需把.md改为.xx即可，注意，其实<strong>不需要重启</strong>即可生效。</p>
+<p>其实只改动了一处，.md项的值应该设置为.md，如下图所示：<br><img src="http://storage.jingwang.site/img/20191215151236.png" alt=""><br>而别的教程中对此项的数值并无设置所以导致失败，一般来说其初始值是“数值未设置”或者”.md_auto_file”。右键建立其他类型文件的方法也是一样的，只需把.md改为.xx即可，注意，其实<strong>不需要重启</strong>即可生效。</p>
+<h2 id="无法修改默认输入法"><a href="#无法修改默认输入法" class="headerlink" title="无法修改默认输入法"></a>无法修改默认输入法</h2><p>由于搜狗输入法的流氓行为使得设置始终无法生效，卸载搜狗输入法即可。</p>
+<blockquote>
+<p><a href="https://sspai.com/post/56697" target="_blank" rel="noopener">https://sspai.com/post/56697</a><br><a href="https://51.ruyo.net/15984.html" target="_blank" rel="noopener">https://51.ruyo.net/15984.html</a></p>
+</blockquote>
 
       
     </div>
@@ -291,7 +300,7 @@
     <div id="toc" class="toc-article">
     <strong class="toc-title">Contents</strong>
     
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#知网下载文献文件名乱码"><span class="nav-number">1.</span> <span class="nav-text">知网下载文献文件名乱码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#win10连接蓝牙耳机后无声音"><span class="nav-number">2.</span> <span class="nav-text">win10连接蓝牙耳机后无声音</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#新建reg文件"><span class="nav-number">3.</span> <span class="nav-text">新建reg文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#win10截图快捷方法"><span class="nav-number">4.</span> <span class="nav-text">win10截图快捷方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#win10邮件应用配置"><span class="nav-number">5.</span> <span class="nav-text">win10邮件应用配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#无法修改hosts文件"><span class="nav-number">6.</span> <span class="nav-text">无法修改hosts文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#右键新建md文件"><span class="nav-number">7.</span> <span class="nav-text">右键新建md文件</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#知网下载文献文件名乱码"><span class="nav-number">1.</span> <span class="nav-text">知网下载文献文件名乱码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#win10连接蓝牙耳机后无声音"><span class="nav-number">2.</span> <span class="nav-text">win10连接蓝牙耳机后无声音</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#新建reg文件"><span class="nav-number">3.</span> <span class="nav-text">新建reg文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#win10截图快捷方法"><span class="nav-number">4.</span> <span class="nav-text">win10截图快捷方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#win10邮件应用配置"><span class="nav-number">5.</span> <span class="nav-text">win10邮件应用配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#win10设置开机自启动"><span class="nav-number">6.</span> <span class="nav-text">win10设置开机自启动</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#无法修改hosts文件"><span class="nav-number">7.</span> <span class="nav-text">无法修改hosts文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#右键新建md文件"><span class="nav-number">8.</span> <span class="nav-text">右键新建md文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#无法修改默认输入法"><span class="nav-number">9.</span> <span class="nav-text">无法修改默认输入法</span></a></li></ol>
     
     </div>
   </aside>
@@ -307,22 +316,41 @@
     <ul class="clearfix widget-social-icons">
     
         
+          <li><a href="mailto:JingwangLi@foxmail.com" title="Email"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+        
+    
+        
           <li><a href="https://github.com/JingwangLi" target="_blank" rel="noopener" title="Github"><i class="fa fa-github" aria-hidden="true"></i></a></li>
         
     
         
-          <li><a href="mailto:JingwangLi@foxmail.com" title="Email"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.zhihu.com/people/JingwangLi" target="_blank" rel="noopener" title="Zhihu"><i class="fa iconfont icon-zhihu" aria-hidden="true"></i></a></li>
+        
+    
+        
+          <li><a href="https://www.douban.com/people/iLJW/" target="_blank" rel="noopener" title="Douban"><i class="fa iconfont icon-douban" aria-hidden="true"></i></a></li>
         
     
     </ul>
   </div>
 
-  <div class="container">
 
+
+  <div class="container">
       	<div class="row">
 
-	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/JingwangLi/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
-	      <p id="copyRightEn">Copyright &copy; 2019 - 2020 Jingwang Li All Rights Reserved.</p>
+	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> | Theme <a href="https://github.com/JingwangLi/hexo-theme-hiker" target="_blank">Hiker</a> </p>
+	      <!-- <p id="copyRightEn">Copyright &copy; 2019 - 2021 Jingwang Li. All Rights Reserved.</p> -->
+
+        <!-- <div style="display: inline-block;"><p id="copyRightEn">Copyright &copy; 2019 - 2021 Jingwang Li&nbsp;&nbsp;&nbsp;</div>
+        <div class="heart">
+           <div class="left"></div>
+           <div class="middle"></div>
+           <div class="right"></div>
+        </div>
+        <a href="https://yan.jingwang.site" target="_blank">&nbsp;&nbsp;Yan Wang</a> -->
+
+        <div><p id="copyRightEn">Copyright &copy; 2019 - 2021 Jingwang Li</div>
 
 	      
     		<p class="busuanzi_uv">
@@ -330,6 +358,7 @@
 				PV : <span id="busuanzi_value_site_pv"></span>
 		    </p>
   		   
+
 		</div>
 
 
@@ -364,7 +393,7 @@
   
     <a href="/skateboarding" class="mobile-nav-link">Skateboarding</a>
   
-    <a href="/about" class="mobile-nav-link">About</a>
+    <a href="https:jingwang.site" class="mobile-nav-link">About</a>
   
 </nav> -->
     
@@ -439,7 +468,7 @@
 
 
 
-	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+	<script async src="//storage.jingwang.site/js/busuanzi/2.3/busuanzi.pure.mini.js">
 	</script>
 
 
@@ -509,7 +538,7 @@
             Jingwang Li
           </div>
           <div class="panel-body">
-            Copyright © 2020 Jingwang Li All Rights Reserved.
+            Copyright © 2021 Jingwang Li All Rights Reserved.
           </div>
         </div>
       </div>

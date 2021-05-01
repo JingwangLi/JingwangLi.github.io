@@ -11,15 +11,15 @@
   
   
   
-  <meta name="description" content="编译BibTex时报错如果要编译BibTex，需要更改LaTeXTools默认的编译方式，具体操作请参考此博客。但是按上文设置好编译方式之后，在文中引用文献时一直报错：Package natbib Warning: There were undefined citations.最后发现是BibTex文件命名的问题，文件名称中间一定不能出现空格，否则就会出现上文中的情况。 LaTeX-cwl无法使用">
+  <meta name="description" content="编译BibTex时报错如果要编译BibTex，需要更改LaTeXTools默认的编译方式，具体操作请参考此博客。但是按上文设置好编译方式之后，在文中引用文献时一直报错：Package natbib Warning: There were undefined citations.最后发现是BibTex文件命名的问题，文件名称中间一定不能出现空格，否则就会出现上文中的情况。 BibTex文件不更新更改">
 <meta property="og:type" content="article">
 <meta property="og:title" content="LaTeX">
 <meta property="og:url" content="http://jingwang.site/posts/latex.html">
 <meta property="og:site_name" content="Jingwang Li">
-<meta property="og:description" content="编译BibTex时报错如果要编译BibTex，需要更改LaTeXTools默认的编译方式，具体操作请参考此博客。但是按上文设置好编译方式之后，在文中引用文献时一直报错：Package natbib Warning: There were undefined citations.最后发现是BibTex文件命名的问题，文件名称中间一定不能出现空格，否则就会出现上文中的情况。 LaTeX-cwl无法使用">
+<meta property="og:description" content="编译BibTex时报错如果要编译BibTex，需要更改LaTeXTools默认的编译方式，具体操作请参考此博客。但是按上文设置好编译方式之后，在文中引用文献时一直报错：Package natbib Warning: There were undefined citations.最后发现是BibTex文件命名的问题，文件名称中间一定不能出现空格，否则就会出现上文中的情况。 BibTex文件不更新更改">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2019-04-17T11:53:32.000Z">
-<meta property="article:modified_time" content="2020-01-19T14:34:33.782Z">
+<meta property="article:modified_time" content="2020-09-24T14:27:19.224Z">
 <meta property="article:tag" content="LaTeX">
 <meta name="twitter:card" content="summary">
   
@@ -33,6 +33,8 @@
   
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:400,500,700&display=swap&subset=chinese-simplified" rel="stylesheet" type="text/css">
+
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
   <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
@@ -68,7 +70,7 @@
   
 
   
-  
+
   
 
 <meta name="generator" content="Hexo 4.2.0"></head>
@@ -116,7 +118,7 @@
                 
                   <li> <a class="main-nav-link" href="/skateboarding">Skateboarding</a> </li>
                 
-                  <li> <a class="main-nav-link" href="/about">About</a> </li>
+                  <li> <a class="main-nav-link" href="https:jingwang.site">About</a> </li>
                 
                   <li><div id="search-form-wrap">
 
@@ -207,8 +209,14 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="编译BibTex时报错"><a href="#编译BibTex时报错" class="headerlink" title="编译BibTex时报错"></a>编译BibTex时报错</h2><p>如果要编译BibTex，需要更改LaTeXTools默认的编译方式，具体操作请参考<a href="https://blog.csdn.net/Galoa/article/details/79587751" target="_blank" rel="noopener">此博客</a>。<br>但是按上文设置好编译方式之后，在文中引用文献时一直报错：Package natbib Warning: There were undefined citations.<br>最后发现是BibTex文件命名的问题，文件名称中间一定不能出现空格，否则就会出现上文中的情况。</p>
-<h2 id="LaTeX-cwl无法使用dv"><a href="#LaTeX-cwl无法使用dv" class="headerlink" title="LaTeX-cwl无法使用dv"></a>LaTeX-cwl无法使用dv</h2><p>LaTeX-cwl是一个用于代码提示的插件，但是安装之后却并未出现代码提示界面，尝试过remove后重新安装、disenable后重新enable、重启sublime均未解决此问题，更换其他电脑仍是如此，尚待解决。</p>
+<h2 id="BibTex文件不更新"><a href="#BibTex文件不更新" class="headerlink" title="BibTex文件不更新"></a>BibTex文件不更新</h2><p>更改LaTeX的默认编译方式。</p>
+<h2 id="LaTeX-cwl无法使用"><a href="#LaTeX-cwl无法使用" class="headerlink" title="LaTeX-cwl无法使用"></a>LaTeX-cwl无法使用</h2><p>LaTeX-cwl是一个用于代码提示的插件，但是安装之后却并未出现代码提示界面，尝试过remove后重新安装、disenable后重新enable、重启sublime均未解决此问题，更换其他电脑仍是如此，尚待解决。</p>
+<p>更新：LaTeX-cwl需要配合LaTeXing使用，所以需要安装LaTeXing。</p>
+<blockquote>
+<p><a href="https://packagecontrol.io/packages/LaTeX-cwl" target="_blank" rel="noopener">https://packagecontrol.io/packages/LaTeX-cwl</a></p>
+</blockquote>
 <h2 id="LaTeXTools无法通过Package-Control安装"><a href="#LaTeXTools无法通过Package-Control安装" class="headerlink" title="LaTeXTools无法通过Package Control安装"></a>LaTeXTools无法通过Package Control安装</h2><p>两台电脑均无法通过Package Control插件安装LaTeXTools，只能手动安装，手动安装的具体步骤按照<a href="https://github.com/SublimeText/LaTeXTools" target="_blank" rel="noopener">官网文档</a>即可。其实，如果你之前安装过LaTeXTools，需要重装的话只需要将从官网下载的压缩包解压后放入指定文件夹中即可，因为卸载LaTeXTools之后相关设置并不会被清除。</p>
+<p>按理说如果输入类似’\begin{equation}’这样的命令，应该自动补一个’\end{equation}’，但LaTeX似乎没有该功能，有时间加一个吧。</p>
 <h2 id="公式无法实时预览"><a href="#公式无法实时预览" class="headerlink" title="公式无法实时预览"></a>公式无法实时预览</h2><p>今天发现公式突然无法实时预览了，鼠标放在公式末尾时报错：<br>ERROR: Failed to run ‘pdfLaTeX’ to create pdf to preview.<br>以为是LaTeXTools插件的问题，重装之后发现问题还是没有解决，最后发现不是插件的问题，而是公式语法错误，之前由于批量替换\alpha使得一些正确的部分被替换成错误的了，所以无法预览。</p>
 <h2 id="equation-align-and-aligned"><a href="#equation-align-and-aligned" class="headerlink" title="equation, align and aligned"></a>equation, align and aligned</h2><p>LaTeX代码及对应的效果如下(LaTeX中两个反斜杠即可实现换行，Markdown中四个反斜杠是因为marked.js中将反斜杠转义)：<br>1</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">\begin&#123;equation&#125;</span><br><span class="line">\begin&#123;aligned&#125;</span><br><span class="line">x_i^&#123;\alpha&#125;(t) &amp;&#x3D; Ax_i(t) + Bu_i(t),\\\\ y_i(t) &amp;&#x3D; Cx_i(t).</span><br><span class="line">\end&#123;aligned&#125;</span><br><span class="line">\end&#123;equation&#125;</span><br></pre></td></tr></table></figure>
@@ -235,6 +243,7 @@
 <p>在LaTeX中，label放在8个位置都可以，而在Markdown中，label只能放在5 6 7 8，因此放在公式末尾是怎么着都没有问题的，而且我个人认为放到末尾非常规范。</p>
 <h2 id="nonumber放置位置"><a href="#nonumber放置位置" class="headerlink" title="\nonumber放置位置"></a><code>\nonumber</code>放置位置</h2><p>LaTeX中<code>\nonumber</code>放在<code>\end{equation}</code>前后均可，但是在Markddown中若放在<code>\end{equation}</code>后则需多加<code>$$</code>，所以最好养成放在<code>\end{equation}</code>前的好习惯。</p>
 <h2 id="多行公式对齐"><a href="#多行公式对齐" class="headerlink" title="多行公式对齐"></a>多行公式对齐</h2><p>注意<code>&amp;</code>只能在align或aligned中使用。</p>
+<p>如果</p>
 
       
     </div>
@@ -301,7 +310,7 @@
     <div id="toc" class="toc-article">
     <strong class="toc-title">Contents</strong>
     
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#编译BibTex时报错"><span class="nav-number">1.</span> <span class="nav-text">编译BibTex时报错</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#LaTeX-cwl无法使用dv"><span class="nav-number">2.</span> <span class="nav-text">LaTeX-cwl无法使用dv</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#LaTeXTools无法通过Package-Control安装"><span class="nav-number">3.</span> <span class="nav-text">LaTeXTools无法通过Package Control安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#公式无法实时预览"><span class="nav-number">4.</span> <span class="nav-text">公式无法实时预览</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#equation-align-and-aligned"><span class="nav-number">5.</span> <span class="nav-text">equation, align and aligned</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#label的放置位置"><span class="nav-number">6.</span> <span class="nav-text">label的放置位置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#nonumber放置位置"><span class="nav-number">7.</span> <span class="nav-text">\nonumber放置位置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多行公式对齐"><span class="nav-number">8.</span> <span class="nav-text">多行公式对齐</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#编译BibTex时报错"><span class="nav-number">1.</span> <span class="nav-text">编译BibTex时报错</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#BibTex文件不更新"><span class="nav-number">2.</span> <span class="nav-text">BibTex文件不更新</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#LaTeX-cwl无法使用"><span class="nav-number">3.</span> <span class="nav-text">LaTeX-cwl无法使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#LaTeXTools无法通过Package-Control安装"><span class="nav-number">4.</span> <span class="nav-text">LaTeXTools无法通过Package Control安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#公式无法实时预览"><span class="nav-number">5.</span> <span class="nav-text">公式无法实时预览</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#equation-align-and-aligned"><span class="nav-number">6.</span> <span class="nav-text">equation, align and aligned</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#label的放置位置"><span class="nav-number">7.</span> <span class="nav-text">label的放置位置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#nonumber放置位置"><span class="nav-number">8.</span> <span class="nav-text">\nonumber放置位置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多行公式对齐"><span class="nav-number">9.</span> <span class="nav-text">多行公式对齐</span></a></li></ol>
     
     </div>
   </aside>
@@ -317,22 +326,41 @@
     <ul class="clearfix widget-social-icons">
     
         
+          <li><a href="mailto:JingwangLi@foxmail.com" title="Email"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+        
+    
+        
           <li><a href="https://github.com/JingwangLi" target="_blank" rel="noopener" title="Github"><i class="fa fa-github" aria-hidden="true"></i></a></li>
         
     
         
-          <li><a href="mailto:JingwangLi@foxmail.com" title="Email"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.zhihu.com/people/JingwangLi" target="_blank" rel="noopener" title="Zhihu"><i class="fa iconfont icon-zhihu" aria-hidden="true"></i></a></li>
+        
+    
+        
+          <li><a href="https://www.douban.com/people/iLJW/" target="_blank" rel="noopener" title="Douban"><i class="fa iconfont icon-douban" aria-hidden="true"></i></a></li>
         
     
     </ul>
   </div>
 
-  <div class="container">
 
+
+  <div class="container">
       	<div class="row">
 
-	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/JingwangLi/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
-	      <p id="copyRightEn">Copyright &copy; 2019 - 2020 Jingwang Li All Rights Reserved.</p>
+	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> | Theme <a href="https://github.com/JingwangLi/hexo-theme-hiker" target="_blank">Hiker</a> </p>
+	      <!-- <p id="copyRightEn">Copyright &copy; 2019 - 2021 Jingwang Li. All Rights Reserved.</p> -->
+
+        <!-- <div style="display: inline-block;"><p id="copyRightEn">Copyright &copy; 2019 - 2021 Jingwang Li&nbsp;&nbsp;&nbsp;</div>
+        <div class="heart">
+           <div class="left"></div>
+           <div class="middle"></div>
+           <div class="right"></div>
+        </div>
+        <a href="https://yan.jingwang.site" target="_blank">&nbsp;&nbsp;Yan Wang</a> -->
+
+        <div><p id="copyRightEn">Copyright &copy; 2019 - 2021 Jingwang Li</div>
 
 	      
     		<p class="busuanzi_uv">
@@ -340,6 +368,7 @@
 				PV : <span id="busuanzi_value_site_pv"></span>
 		    </p>
   		   
+
 		</div>
 
 
@@ -374,7 +403,7 @@
   
     <a href="/skateboarding" class="mobile-nav-link">Skateboarding</a>
   
-    <a href="/about" class="mobile-nav-link">About</a>
+    <a href="https:jingwang.site" class="mobile-nav-link">About</a>
   
 </nav> -->
     
@@ -449,7 +478,7 @@
 
 
 
-	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+	<script async src="//storage.jingwang.site/js/busuanzi/2.3/busuanzi.pure.mini.js">
 	</script>
 
 
@@ -519,7 +548,7 @@
             Jingwang Li
           </div>
           <div class="panel-body">
-            Copyright © 2020 Jingwang Li All Rights Reserved.
+            Copyright © 2021 Jingwang Li All Rights Reserved.
           </div>
         </div>
       </div>
